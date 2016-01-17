@@ -1,3 +1,186 @@
 body{
-	
+	font-family: Lato;
+	font-weight: 400;
+}
+h1, h2{
+	font-family: Bebas-neue;
+	color: rgb(4,9,14);
+	margin: 0;
+}
+h1 .smaller, h2 .smaller{
+	font-family: "Lato";
+	font-weight: 100;
+	vertical-align: top;
+}
+h1 .separator{vertical-align: top;}
+h1{ font-size: 56pt;}
+h2{	font-size: 25pt;}
+h1 .smaller{	font-size: 35pt; line-height: 65pt; }
+h2 .smaller{	font-size: 25pt; line-height: 25pt; }
+ul li{
+	font-size: 17pt;
+	font-weight: 300;
+}
+p{
+	margin-bottom: 0pt;
+	padding:10pt 20pt;
+}
+.box{
+	border:1pt solid rgb(226,0,122);
+	margin:20pt auto;
+	padding:10pt 20pt;
+}
+.box ul li{
+	font-size: 18.30pt;
+	font-weight: 100;
+}
+.box p{
+	padding:0;
+}
+.justify{
+	/*TODO:IE8-9*/
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+}
+.black-box{
+	padding-left:5pt;
+	padding-right:5pt;
+	background-color:rgb(4,9,14);
+	color: rgb(255,255,255);
+	display: inline-block;
+}
+.separator:before{
+	content: " | ";
+	display: inline-block; 
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.separator.circle:before{
+	content: " • ";
+	margin-left: 0;
+}
+.en{
+	font-weight: 100;
+}
+.smaller{
+	font-weight: 100;
+}
+header ul li{
+	display: inline-block;
+	white-space: nowrap;
+}
+ul.what, ul.find{
+	list-style: none;
+	margin-top: 10pt;	
+}
+ul.what li{
+	margin-bottom: 0;
+}
+ul.find li{
+	display: inline-block;
+	width: 15mm;
+	height: 15mm;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/*TODO: fallbacks*/
+}
+ul.find li a{
+	font-size:0.01px;
+	width:100%;
+	height:100%;
+	display: block;
+}
+ul.find li.in{background-image:  url('../linkedin.png'); background-image:  none,url('../img/linkedin.svg'), url('../img/linkedin.png'); }
+ul.find li.fb{background-image:  url('../facebook.png'); background-image:  none,url('../img/facebook.svg'), url('../img/facebook.png'); }
+ul.find li.be{background-image:  url('../behance.png'); background-image:  none,url('../img/behance.svg'), url('../img/behance.png'); }
+ul.find li.pr{background-image:  url('../pinterest.png'); background-image:  none,url('../img/pinterest.svg'), url('../img/pinterest.png'); }
+ul.find li.i{background-image:  url('../instagram.png'); background-image:  none,url('../img/instagram.svg'), url('../img/instagram.png'); }
+
+ul.what li:before{
+	content: "»";
+	margin-right: 10pt;	
+}
+
+div.find-me{
+	position: absolute;
+	font-size:0.01px;
+	left:-35mm;
+	width: 35mm;
+	height: 25mm;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image:  url('../find_me.png'); background-image:  none,url('../img/find_me.svg'), url('../img/find_me.png'); 
+	/*TODO: fallbacks*/
+}
+
+
+
+/*Media*/
+
+
+@media (max-width: 960px) {
+  header.box ul {
+  	display: block;
+  }
+  header.box h1{
+  	font-size:40pt;
+  	line-height: 40pt;
+  }
+  header.box h1 .separator{
+  	line-height: 40pt;
+  }
+  header.box h1 .smaller{
+  	font-size:30pt;
+  	line-height: 40pt;
+  }
+  header.box ul .separator{
+  	display: none;
+  }
+  header.box ul li{
+  	display: block;
+  	clear: both;
+  	text-align: center;
+  }
+  ul.what .en{
+  	display: block;
+  	clear: both;
+  	padding-left: 17pt;
+  }
+  ul.what li{
+  	padding-left: 17pt;
+  }
+  ul.what .separator{
+  	display: none;
+  }
+}
+@media (max-width: 768px) {
+  header.box .justify{
+  	display: block;
+  	text-align: center;
+  }
+  header.box h1{
+  	font-size:40pt;
+  	line-height: 40pt;
+  	display: block;
+  	clear: both;
+  }
+  header.box h1 .separator{
+  	display: none;
+  }
+  .find-me{
+  	display: none;	
+  }
+  ul.find{
+  	margin:auto;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.find li{
+  	display: block;
+	text-align: center;  	
+  }
 }
