@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dandelion (0.4.16)
+      rugged (= 0.23.3)
+    rugged (0.23.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dandelion
+
+BUNDLED WITH
+   1.10.6

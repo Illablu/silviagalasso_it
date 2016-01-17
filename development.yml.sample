@@ -1,0 +1,15 @@
+#dandelion --config=development.yml deploy
+adapter: ftp
+host: host
+username: username
+password: password
+path: dev
+
+exclude:
+    - .gitignore
+    - production.yml
+    - development.yml
+    - Capfile
+    - Gemfile
+    - Gemfile.lock
+    - .ruby-version

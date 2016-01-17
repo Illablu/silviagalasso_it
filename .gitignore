@@ -12,7 +12,8 @@
 .ruby-gemset
 
 # Static images
-/lib
 /public
 
 .powrc
+production.yml
+development.yml
