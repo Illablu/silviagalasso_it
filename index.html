@@ -14,6 +14,7 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery-bigtext.js"></script>
 	
 	<script type="text/javascript">
 	($(function() {
@@ -39,7 +40,9 @@
 	  $(".next-step").on("click", function(e){
 	  	e.preventDefault();$.scrollTo('.step3', 1000);
 	  });
-
+	  $("header h1").bigtext({maxfontsize: 170});
+	  $("header h2").bigtext({maxfontsize: 150});
+	  $(".headline li.item").bigtext({maxfontsize: 25});
 	}));
 	</script>
 </head>
@@ -50,16 +53,19 @@
 				<div class="row">
 					<div class="twelve columns">
 						<header>
-							<div>
+							<div class="titles">
 								<h1><span><span class="pink">S</span>ilvia <span class="pink">G</span>ala<span class="pink">ss</span>o</span></h1>
 								<h2><span class="smaller">editorial design</span></h2>
 							</div>
 							<div class="box-separator"></div>
 							<ul class="headline">
-								<li>impaginazione</li>
-								<li>grafica editoriale</li>
-								<li class="clear">correzione bozze</li>
-								<li>revisione testi</li>
+								<li class="item"><span>impaginazione</span></li>
+								<li class="small-separator"><span class="separator circle"></span></li>
+								<li class="item"><span>grafica editoriale</span></li>
+								<li class="hidden "><span class="separator circle"></span></li>
+								<li class="clear item"><span>correzione bozze</span></li>
+								<li class="small-separator"><span class="separator circle"></span></li>
+								<li class="item"><span>revisione testi</span></li>
 							</ul>
 						</header>			
 					</div>

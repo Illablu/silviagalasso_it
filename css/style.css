@@ -11,19 +11,21 @@ h1 .smaller, h2 .smaller, h3 .smaller{
 	font-family: "Lato";
 	font-weight: 300;
 	vertical-align: top;
+  line-height: 1em; 
 }
 h1 .pink{
   color: rgb(226,0,122);
 }
-h1{ font-size: 56pt;}
-h2{ font-size: 25pt;}
-h3{	font-size: 25pt;}
-h1 .smaller{	font-size: 35pt; line-height: 65pt; }
-h2 .smaller{  font-size: 25pt; line-height: 25pt; }
-h3 .smaller{	font-size: 25pt; line-height: 25pt; }
+
+h1{ font-size: 5em; }
+h2{ font-size: 3em; }
+h3{	font-size: 2em; }
+h1 .smaller{	font-size: 0.9em; }
+h2 .smaller{  font-size: 0.9em; }
+h3 .smaller{	font-size: 0.9em; }
 
 ul li{
-	font-size: 17pt;
+	/*font-size: 17pt;*/
 	font-weight: 400;
 }
 p{
@@ -34,9 +36,26 @@ header{
   margin:20pt auto;
   padding:10pt 0;
 }
+header h1, header h2{
+  width:49%;
+  display: inline-block;
+  min-height: 100px;
+}
+header h1{
+  
+}
+header h2{
+  text-align: right;
+  right:0;
+  float:right;
+  vertical-align: bottom;
+
+}
 header .box-separator{
   border-bottom:1pt dotted rgb(4,9,14);
   background: url('../img/header_background_cut.png') bottom left no-repeat;
+  min-height:20px;
+  margin-bottom: 10pt;
 }
 .box{
 	border:1pt dotted rgb(226,0,122);
@@ -73,13 +92,19 @@ header .box-separator{
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.headline li:before,
+.headline {
+      /*TODO:IE8-9*/
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+}
+.headline li{
+  font-size: 1.5em;
+}
 .separator.circle:before{
 	content: " • ";
 	margin-left: 0;
-}
-.headline li:first-child:before{
-  content: "";
 }
 .en{
 	font-weight: 300;
@@ -157,12 +182,34 @@ div.find-me.mobile{
 
 
 @media (max-width: 960px) {
+  header h1, header h2{
+    min-height: 50px;
+  }
+  ul.headline{
+    display: block;
+  }
   ul.headline li{
-    clear:none;
     display: inline-block;
+    width: 48%;
+    text-align: right;
+  }
+  ul.headline li:first-child{
+    text-align: left;
   }
   ul.headline li.clear:before{
-    content:"";
+    display: block;
+    clear: both;
+    content: "";
+  }
+  ul.headline li.clear{
+    clear: left;
+    text-align: left;
+  }
+  ul.headline li.hidden{
+    display: none;
+  }
+  ul.headline li.small-separator{
+    width: 2%;
   }
   ul.find{
     /*TODO:IE8-9*/
@@ -175,10 +222,10 @@ div.find-me.mobile{
   div.find-me.mobile{display: block;}
 
   header ul li{
-  	display: inline-block;
+    display: inline-block;
     width: 49%;
-  	clear: both;
-  	text-align: center;
+    clear: both;
+    text-align: center;
   }
   ul.what .en{
   	clear: both;
@@ -188,6 +235,30 @@ div.find-me.mobile{
   }
 }
 
+@media (max-width: 768px) {
+  header h1, header h2{
+    display: block;
+    float: none;
+    min-height:0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.5em;
+  }
+  ul.headline li, ul.headline li.clear, ul.headline li:first-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  ul.headline li.small-separator{
+    display: none;
+  }
+
+}
+.titles{
+  width:100%;
+  display: block;
+  margin-bottom: 10pt;
+}
 body, html {
   height: 100%;
 }
