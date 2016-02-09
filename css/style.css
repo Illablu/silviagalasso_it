@@ -9,7 +9,7 @@ h1, h2{
 }
 h1 .smaller, h2 .smaller{
 	font-family: "Lato";
-	font-weight: 100;
+	font-weight: 300;
 	vertical-align: top;
 }
 h1 .separator{vertical-align: top;}
@@ -19,7 +19,7 @@ h1 .smaller{	font-size: 35pt; line-height: 65pt; }
 h2 .smaller{	font-size: 25pt; line-height: 25pt; }
 ul li{
 	font-size: 17pt;
-	font-weight: 300;
+	font-weight: 400;
 }
 p{
 	margin-bottom: 0pt;
@@ -32,7 +32,7 @@ p{
 }
 .box ul li{
 	font-size: 18.30pt;
-	font-weight: 100;
+	font-weight: 300;
 }
 .box p{
 	padding:0;
@@ -62,10 +62,10 @@ p{
 	margin-left: 0;
 }
 .en{
-	font-weight: 100;
+	font-weight: 300;
 }
 .smaller{
-	font-weight: 100;
+	font-weight: 300;
 }
 header ul li{
 	display: inline-block;
