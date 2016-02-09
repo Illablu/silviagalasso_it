@@ -11,66 +11,144 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<meta name="robots" content="noindex">
 	<meta name="googlebot" content="noindex">
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	
+	<script type="text/javascript">
+	($(function() {
+  	  $('.next-step').waypoint({
+	    handler: function(direction) {
+	    	if (direction == "down"){
+	    		$.scrollTo(".step3", 1000);
+	    	}
+	    },
+	    offset: '50%'
+	  });
+  	  $('.previous-step').waypoint({
+	    handler: function(direction) {
+	    	if (direction == "up"){
+	    		$.scrollTo(0, 1000);
+	    	}
+	    },
+	    offset: '10%'
+	  });
+	  $(".previous-step").on("click", function(e){
+	  	e.preventDefault();$.scrollTo('.step1', 1000);
+	  });
+	  $(".next-step").on("click", function(e){
+	  	e.preventDefault();$.scrollTo('.step3', 1000);
+	  });
+
+	}));
+	</script>
 </head>
 <body>
-	
-
-	
-	<div class="wrapper">
+	<div class="step step1">
+		<div class="wrapper">
 			<div class="container">
-			<header class="box">
+				<header class="box">
+					<div class="row">
+						<div class="twelve columns justify">
+							<h1><span>Silvia Galasso</span></h1>
+							<h1><span class="smaller"><span class="separator"></span></span></h1>
+							<h1><span class="smaller">editorial design</span></h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="twelve columns">
+							<ul class="justify">
+								<li>impaginazione</li>
+								<li><span class="separator circle"></span></li>
+								<li>grafica editoriale</li>
+								<li><span class="separator circle"></span></li>
+								<li>correzione bozze</li>
+								<li><span class="separator circle"></span></li>
+								<li>revisione testi</li>
+							</ul>				
+						</div>
+					</div>
+				</header>
 				<div class="row">
-					<div class="twelve columns justify">
-						<h1><span>Silvia Galasso</span></h1>
-						<h1><span class="smaller"><span class="separator"></span></span></h1>
-						<h1><span class="smaller">editorial design</span></h1>
+					<div class="twelve columns">
+						<h2 class="black-box">di cosa mi occupo<span class="en smaller"><span class="separator"></span>what I do</span></h2>
+
+						<ul class="what">
+							<li>libri<span class="en"><span class="separator"></span>books</span></li>
+							<li>cataloghi<span class="en"><span class="separator"></span>catalogues</span></li>
+							<li>brochures</li>
+							<li>dépliant</li>
+							<li>volantini<span class="en"><span class="separator"></span>flyers</span></li>
+							<li>biglietti da visita<span class="en"><span class="separator"></span>business cards</span></li>
+							<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
+						</ul>
+
+						<div class="find-me">You can find me here!</div>
+						<ul class="find">
+							<li class="in"><a href="#">in</a></li>
+							<li class="fb"><a href="#">fb</a></li>
+							<li class="be"><a href="#">be</a></li>
+							<li class="pr"><a href="#">pr</a></li>
+							<li class="i"><a href="#">i</a></li>
+						</ul>
+
+						<p>info@silviagalasso.it / p.iva 01785320936</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="twelve columns">
-						<ul class="justify">
-							<li>impaginazione</li>
-							<li><span class="separator circle"></span></li>
-							<li>grafica editoriale</li>
-							<li><span class="separator circle"></span></li>
-							<li>correzione bozze</li>
-							<li><span class="separator circle"></span></li>
-							<li>revisione testi</li>
-						</ul>				
+						<div class="box">
+							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step">contattami</a>.</p>
+							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step">contact me</a>.</p>
+						</div>
+						<a href="#" class="next-step">&#9660;</a>
 					</div>
 				</div>
-			</header>
-			<div class="row">
-				<div class="twelve columns">
-					<h2 class="black-box">di cosa mi occupo<span class="en smaller"><span class="separator"></span>what I do</span></h2>
-
-					<ul class="what">
-						<li>libri<span class="en"><span class="separator"></span>books</span></li>
-						<li>cataloghi<span class="en"><span class="separator"></span>catalogues</span></li>
-						<li>brochures</li>
-						<li>dépliant</li>
-						<li>volantini<span class="en"><span class="separator"></span>flyers</span></li>
-						<li>biglietti da visita<span class="en"><span class="separator"></span>business cards</span></li>
-						<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
-					</ul>
-
-					<div class="find-me">You can find me here!</div>
-					<ul class="find">
-						<li class="in"><a href="#">in</a></li>
-						<li class="fb"><a href="#">fb</a></li>
-						<li class="be"><a href="#">be</a></li>
-						<li class="pr"><a href="#">pr</a></li>
-						<li class="i"><a href="#">i</a></li>
-					</ul>
-
-					<p>info@silviagalasso.it / p.iva 01/85320936</p>
-				</div>
+				
 			</div>
-			<div class="row">
-				<div class="twelve columns">
-					<div class="box">
-						<p>Per informazioni e per ricevere un preventivo gratuito, contattami.</p>
-						<p class="en smaller">If you need more info or to request a free estimate, please contact me.</p>
+		</div>
+	</div>
+	<div class="step step2">&nbsp;</div>
+	<div class="step step3">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns">
+					<a href="#" class="previous-step">&#9650;</a>
+						<form class="form-horizontal">
+							<fieldset>
+
+								<!-- Form Name -->
+								<legend>Form Name</legend>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="Email">Text Input</label>  
+									<div class="col-md-4">
+										<input id="Email" name="Email" placeholder="placeholder" class="form-control input-md" type="text">
+										<span class="help-block">help</span>  
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="textinput">Text Input</label>  
+									<div class="col-md-4">
+										<input id="textinput" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
+										<span class="help-block">help</span>  
+									</div>
+								</div>
+
+								<!-- Textarea -->
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="textarea">Text Area</label>
+									<div class="col-md-4">                     
+										<textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+									</div>
+								</div>
+
+							</fieldset>
+						</form>
 					</div>
 				</div>
 			</div>

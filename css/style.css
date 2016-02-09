@@ -35,7 +35,12 @@ p{
 	font-weight: 300;
 }
 .box p{
-	padding:0;
+  padding:0;
+}
+.box a{
+	font-family: inherit;
+  text-decoration: underline;
+  display: inline;
 }
 .justify{
 	/*TODO:IE8-9*/
@@ -183,4 +188,28 @@ div.find-me{
   	display: block;
 	text-align: center;  	
   }
+}
+
+body, html {
+  height: 100%;
+}
+.step{
+  min-height:100%;
+  height:100%;
+  display: block;
+  border:0;
+}
+.step:before, .step:after{
+  content: " ";
+  display: block;
+}
+.previous-step, .next-step{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(4,9,14);
+  font-family: Bebas-neue;
+}
+.previous-step:hover, .next-step:hover{
+  color: rgb(226,0,122);
 }
