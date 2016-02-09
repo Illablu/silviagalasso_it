@@ -2,21 +2,26 @@ body{
 	font-family: Lato;
 	font-weight: 400;
 }
-h1, h2{
+h1, h2, h3{
 	font-family: Bebas-neue;
 	color: rgb(4,9,14);
 	margin: 0;
 }
-h1 .smaller, h2 .smaller{
+h1 .smaller, h2 .smaller, h3 .smaller{
 	font-family: "Lato";
 	font-weight: 300;
 	vertical-align: top;
 }
-h1 .separator{vertical-align: top;}
+h1 .pink{
+  color: rgb(226,0,122);
+}
 h1{ font-size: 56pt;}
-h2{	font-size: 25pt;}
+h2{ font-size: 25pt;}
+h3{	font-size: 25pt;}
 h1 .smaller{	font-size: 35pt; line-height: 65pt; }
-h2 .smaller{	font-size: 25pt; line-height: 25pt; }
+h2 .smaller{  font-size: 25pt; line-height: 25pt; }
+h3 .smaller{	font-size: 25pt; line-height: 25pt; }
+
 ul li{
 	font-size: 17pt;
 	font-weight: 400;
@@ -25,10 +30,23 @@ p{
 	margin-bottom: 0pt;
 	padding:10pt 20pt;
 }
+header{
+  margin:20pt auto;
+  padding:10pt 0;
+}
+header .box-separator{
+  border-bottom:1pt dotted rgb(4,9,14);
+  background: url('../img/header_background_cut.png') bottom left no-repeat;
+}
 .box{
-	border:1pt solid rgb(226,0,122);
+	border:1pt dotted rgb(226,0,122);
 	margin:20pt auto;
 	padding:10pt 20pt;
+  margin-bottom:0px;
+}
+.box-separator{
+  background: url('../img/box_background_cut.png') top right no-repeat;
+  min-height:35px;
 }
 .box ul li{
 	font-size: 18.30pt;
@@ -42,13 +60,6 @@ p{
   text-decoration: underline;
   display: inline;
 }
-.justify{
-	/*TODO:IE8-9*/
-    display: -webkit-flex; /* Safari */
-    -webkit-justify-content: space-between; /* Safari 6.1+ */
-    display: flex;
-    justify-content: space-between;
-}
 .black-box{
 	padding-left:5pt;
 	padding-right:5pt;
@@ -57,14 +68,18 @@ p{
 	display: inline-block;
 }
 .separator:before{
-	content: " | ";
+	content: " / ";
 	display: inline-block; 
 	margin-left: 10px;
 	margin-right: 10px;
 }
+.headline li:before,
 .separator.circle:before{
 	content: " • ";
 	margin-left: 0;
+}
+.headline li:first-child:before{
+  content: "";
 }
 .en{
 	font-weight: 300;
@@ -80,7 +95,7 @@ ul.what, ul.find{
 	list-style: none;
 	margin-top: 10pt;	
 }
-ul.what li{
+ul.what{
 	margin-bottom: 0;
 }
 ul.find li{
@@ -116,9 +131,25 @@ div.find-me{
 	height: 25mm;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background-image:  url('../find_me.png'); background-image:  none,url('../img/find_me.svg'), url('../img/find_me.png'); 
 	/*TODO: fallbacks*/
+
 }
+div.find-me.desktop{
+  display: block;
+  background-image:  url('../find_me_right.png');
+  background-image:  none, url('../img/find_me_right.svg'), url('../find_me_right.png');
+}
+div.find-me.mobile{
+  position: relative;
+  left:0;
+  margin:auto;
+  width: 74mm;
+  height: 54mm;
+  display: none;
+  background-image:  url('../find_me_up.png');
+  background-image:  none, url('../img/find_me_up.svg'), url('../find_me_up.png');
+}
+  
 
 
 
@@ -126,67 +157,34 @@ div.find-me{
 
 
 @media (max-width: 960px) {
-  header.box ul {
-  	display: block;
+  ul.headline li{
+    clear:none;
+    display: inline-block;
   }
-  header.box h1{
-  	font-size:40pt;
-  	line-height: 40pt;
-  }
-  header.box h1 .separator{
-  	line-height: 40pt;
-  }
-  header.box h1 .smaller{
-  	font-size:30pt;
-  	line-height: 40pt;
-  }
-  header.box ul .separator{
-  	display: none;
-  }
-  header.box ul li{
-  	display: block;
-  	clear: both;
-  	text-align: center;
-  }
-  ul.what .en{
-  	display: block;
-  	clear: both;
-  	padding-left: 17pt;
-  }
-  ul.what li{
-  	padding-left: 17pt;
-  }
-  ul.what .separator{
-  	display: none;
-  }
-}
-@media (max-width: 768px) {
-  header.box .justify{
-  	display: block;
-  	text-align: center;
-  }
-  header.box h1{
-  	font-size:40pt;
-  	line-height: 40pt;
-  	display: block;
-  	clear: both;
-  }
-  header.box h1 .separator{
-  	display: none;
-  }
-  .find-me{
-  	display: none;	
+  ul.headline li.clear:before{
+    content:"";
   }
   ul.find{
-  	margin:auto;
+    /*TODO:IE8-9*/
     display: -webkit-flex; /* Safari */
     -webkit-justify-content: space-between; /* Safari 6.1+ */
     display: flex;
     justify-content: space-between;
   }
-  ul.find li{
-  	display: block;
-	text-align: center;  	
+  div.find-me.desktop{display: none;}
+  div.find-me.mobile{display: block;}
+
+  header ul li{
+  	display: inline-block;
+    width: 49%;
+  	clear: both;
+  	text-align: center;
+  }
+  ul.what .en{
+  	clear: both;
+  }
+  ul.what .separator{
+  	
   }
 }
 
