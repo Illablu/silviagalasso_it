@@ -4,9 +4,12 @@
 	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>SilviaGalasso.it</title>
-	<link rel="stylesheet" type="text/css" href="css/skeleton.css"/> 
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-	<link rel='stylesheet' type='text/css' href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel='stylesheet' type='text/css' href="css/owl.carousel.css" />
+	<link rel='stylesheet' type='text/css' href="css/owl.theme.css" />
+	<link rel="stylesheet" type='text/css' href="css/owl.transitions.css">
+	<link rel='stylesheet' type='text/css' href="css/style.css" />
 	<script src="https://use.typekit.net/ucj3pba.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script src="js/jquery-2.1.4.min.js"></script>
@@ -16,35 +19,56 @@
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 	<script src="js/jquery-bigtext.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	
 	<script type="text/javascript">
-	($(function() {
-  	  $('.next-step').waypoint({
+	$(document).ready(function() {
+ 	  $('.next-step.step2').waypoint({
 	    handler: function(direction) {
 	    	if (direction == "down"){
-	    		$.scrollTo(".step3", 1000);
+	    		$.scrollTo(".step.step3", 1000);
 	    	}
 	    },
 	    offset: '50%'
 	  });
-  	  $('.previous-step').waypoint({
+ 	  $('.next-step.step1').waypoint({
 	    handler: function(direction) {
-	    	if (direction == "up"){
-	    		$.scrollTo(0, 1000);
+	    	if (direction == "down"){
+	    		$.scrollTo(".step.step2", 1000);
 	    	}
 	    },
-	    offset: '10%'
+	    offset: '50%'
 	  });
-	  $(".previous-step").on("click", function(e){
-	  	e.preventDefault();$.scrollTo('.step1', 1000);
+
+	  $(".previous-step.step1").on("click", function(e){
+	  	e.preventDefault();$.scrollTo('.step.step1', 1000);
 	  });
-	  $(".next-step").on("click", function(e){
-	  	e.preventDefault();$.scrollTo('.step3', 1000);
+	  $(".previous-step.step2").on("click", function(e){
+	  	e.preventDefault();$.scrollTo('.step.step1', 1000);
 	  });
+	  $(".next-step.step1").on("click", function(e){
+	  	e.preventDefault();$.scrollTo('.step.step2', 1000);
+	  });
+	  $(".next-step.step2").on("click", function(e){
+	  	e.preventDefault();$.scrollTo('.step.step3', 1000);
+	  });
+
 	  $("header h1").bigtext({maxfontsize: 170});
 	  $("header h2").bigtext({maxfontsize: 150});
 	  $(".headline li.item").bigtext({maxfontsize: 25});
-	}));
+
+	  $('.portfolio').owlCarousel({
+	    singleItem: true,
+	    transitionStyle : "backSlide"
+	    });
+	  $(".portfolio-next").click(function(){
+	    owl.trigger('owl.next');
+	  })
+	  $(".portfolio-prev").click(function(){
+	    owl.trigger('owl.prev');
+	  })
+
+	});
 	</script>
 </head>
 <body>
@@ -101,11 +125,11 @@
 				<div class="row">
 					<div class="twelve columns">
 						<div class="box">
-							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step">contattami</a>.</p>
-							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step">contact me</a>.</p>
+							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step step3">contattami</a>.</p>
+							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step step3">contact me</a>.</p>
 						</div>
 						<div class="box-separator"></div>
-						<a href="#" class="next-step">&#9660;</a>
+						<a href="#" class="next-step step1">&#9660;</a>
 					</div>
 				</div>
 				
@@ -113,16 +137,45 @@
 		</div>
 	</div>
 	<div class="step step2">
-	
-	&nbsp;
-
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns">
+						<h3 class="black-box">portfolio</h3>
+						<p>Intro.</p>
+						<div class="portfolio owl-carousel owl-theme">
+							<div class="item"><img src="portfolio/portfolio-01.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-02.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-03.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-04.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-05.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-06.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-07.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-08.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-09.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-10.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-11.jpg" /></div>
+							<div class="item"><img src="portfolio/portfolio-12.jpg" /></div>
+						</div>
+						<a href="#" class="next-step step2">&#9660;</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="step step3">
 		<div class="wrapper">
 			<div class="container">
 				<div class="row">
 					<div class="twelve columns">
-					<a href="#" class="previous-step">&#9650;</a>
+						<div class="box">
+							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step">contattami</a>.</p>
+							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step">contact me</a>.</p>
+						</div>
+						<div class="box-separator"></div>
+
+						<h3 class="black-box">Contattami<span class="en smaller"><span class="separator"></span>contact me</span></h3>
+						<br /><br />
 						<form class="form-horizontal">
 							<fieldset>
 
@@ -157,6 +210,8 @@
 
 							</fieldset>
 						</form>
+						<br /><br /><br /><br />
+						<a href="#" class="previous-step step2">&#9650;</a>
 					</div>
 				</div>
 			</div>
