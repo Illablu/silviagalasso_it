@@ -3,7 +3,7 @@
 
 **Checkout develop**
 
-    dandelion --config=develop.yml deploy
+    dandelion --config=development.yml deploy
 
 *On master*
 
