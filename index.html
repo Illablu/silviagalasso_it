@@ -23,33 +23,7 @@
 	
 	<script type="text/javascript">
 	$(document).ready(function() {
- 	  $('.next-step.step2').waypoint({
-	    handler: function(direction) {
-	    	if (direction == "down"){
-	    		$.scrollTo(".step.step3", 1000);
-	    	}
-	    },
-	    offset: '50%'
-	  });
- 	  $('.next-step.step1').waypoint({
-	    handler: function(direction) {
-	    	if (direction == "down"){
-	    		$.scrollTo(".step.step2", 1000);
-	    	}
-	    },
-	    offset: '50%'
-	  });
-
-	  $(".previous-step.step1").on("click", function(e){
-	  	e.preventDefault();$.scrollTo('.step.step1', 1000);
-	  });
-	  $(".previous-step.step2").on("click", function(e){
-	  	e.preventDefault();$.scrollTo('.step.step1', 1000);
-	  });
-	  $(".next-step.step1").on("click", function(e){
-	  	e.preventDefault();$.scrollTo('.step.step2', 1000);
-	  });
-	  $(".next-step.step2").on("click", function(e){
+	  $(".next-step.step3").on("click", function(e){
 	  	e.preventDefault();$.scrollTo('.step.step3', 1000);
 	  });
 
@@ -87,7 +61,7 @@
 								<li class="item"><span>impaginazione</span></li>
 								<li class="small-separator"><span class="separator circle"></span></li>
 								<li class="item"><span>grafica editoriale</span></li>
-								<li class="hidden "><span class="separator circle"></span></li>
+								<li class="hidden"><span class="separator circle"></span></li>
 								<li class="clear item"><span>correzione bozze</span></li>
 								<li class="small-separator"><span class="separator circle"></span></li>
 								<li class="item"><span>revisione testi</span></li>
@@ -109,6 +83,7 @@
 							<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
 						</ul>
 
+
 						<div class="find-me desktop">You can find me here!</div>
 						<ul class="find">
 							<li class="in"><a href="#">in</a></li>
@@ -119,7 +94,6 @@
 						</ul>
 						<div class="find-me mobile">You can find me here!</div>
 
-						<p>info@silviagalasso.it / p.iva 01785320936</p>
 					</div>
 				</div>
 				<div class="row">
@@ -127,9 +101,9 @@
 						<div class="box">
 							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step step3">contattami</a>.</p>
 							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step step3">contact me</a>.</p>
+							<p class="contact-info">info@silviagalasso.it / p.iva 01785320936</p>
 						</div>
 						<div class="box-separator"></div>
-						<a href="#" class="next-step step1">&#9660;</a>
 					</div>
 				</div>
 				
@@ -157,7 +131,6 @@
 							<div class="item"><img src="portfolio/portfolio-11.jpg" /></div>
 							<div class="item"><img src="portfolio/portfolio-12.jpg" /></div>
 						</div>
-						<a href="#" class="next-step step2">&#9660;</a>
 					</div>
 				</div>
 			</div>
@@ -168,12 +141,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="twelve columns">
-						<div class="box">
-							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step">contattami</a>.</p>
-							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step">contact me</a>.</p>
-						</div>
-						<div class="box-separator"></div>
-
 						<h3 class="black-box">Contattami<span class="en smaller"><span class="separator"></span>contact me</span></h3>
 						<br /><br />
 						<form class="form-horizontal">
@@ -184,25 +151,23 @@
 
 								<!-- Text input-->
 								<div class="form-group">
-									<label class="col-md-4 control-label" for="Email">Text Input</label>  
+									<label class="col-md-4 control-label" for="Email">Email<span class="en"><span class="separator"></span>Email</span></label>  
 									<div class="col-md-4">
-										<input id="Email" name="Email" placeholder="placeholder" class="form-control input-md" type="text">
-										<span class="help-block">help</span>  
+										<input id="Email" name="Email" class="form-control input-md" type="text">
 									</div>
 								</div>
 
 								<!-- Text input-->
 								<div class="form-group">
-									<label class="col-md-4 control-label" for="textinput">Text Input</label>  
+									<label class="col-md-4 control-label" for="textinput">Nome<span class="en"><span class="separator"></span>Name</span></label>  
 									<div class="col-md-4">
-										<input id="textinput" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
-										<span class="help-block">help</span>  
+										<input id="textinput" name="textinput" class="form-control input-md" type="text">
 									</div>
 								</div>
 
 								<!-- Textarea -->
 								<div class="form-group">
-									<label class="col-md-4 control-label" for="textarea">Text Area</label>
+									<label class="col-md-4 control-label" for="textarea">Messaggio<span class="en"><span class="separator"></span>Message</span></label>
 									<div class="col-md-4">                     
 										<textarea class="form-control" id="textarea" name="textarea">default text</textarea>
 									</div>
@@ -211,7 +176,6 @@
 							</fieldset>
 						</form>
 						<br /><br /><br /><br />
-						<a href="#" class="previous-step step2">&#9650;</a>
 					</div>
 				</div>
 			</div>
