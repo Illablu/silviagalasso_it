@@ -10,6 +10,7 @@
 	<link rel='stylesheet' type='text/css' href="css/owl.theme.css" />
 	<link rel="stylesheet" type='text/css' href="css/owl.transitions.css">
 	<link rel='stylesheet' type='text/css' href="css/style.css" />
+	<link rel='stylesheet' type='text/css' href="css/jquery.fullpage.min.css" />
 	<script src="https://use.typekit.net/ucj3pba.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script src="js/jquery-2.1.4.min.js"></script>
@@ -20,21 +21,20 @@
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 	<script src="js/jquery-bigtext.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-	  $(".next-step.step3").on("click", function(e){
-	  	e.preventDefault();$.scrollTo('.step.step3', 1000);
-	  });
-
 	  $("header h1").bigtext({maxfontsize: 170});
 	  $("header h2").bigtext({maxfontsize: 150});
 	  $(".headline li.item").bigtext({maxfontsize: 25});
 
 	  $('.portfolio').owlCarousel({
-	    singleItem: true,
+	    singleItem: false,
+	    items : 2,
 	    transitionStyle : "backSlide"
 	    });
+
 	  $(".portfolio-next").click(function(){
 	    owl.trigger('owl.next');
 	  })
@@ -42,154 +42,194 @@
 	    owl.trigger('owl.prev');
 	  })
 
+		$('#fullpage').fullpage({
+			responsiveWidth: 768,
+			responsiveHeight: 768,
+			anchors: ['intro', 'what', 'portfolio', 'contact'],
+			afterLoad: function(anchorLink, index){
+				if(index == 1){
+					$('#header').animate({
+						opacity: '0'
+					}, 100, 'easeOutSine');
+				}else{
+					$('#header').animate({
+						opacity: '1'
+					}, 1000, 'easeOutSine');
+				}
+			}
+		});
+
 	});
 	</script>
 </head>
 <body>
-	<div class="step step1">
+	<div id="header">
 		<div class="wrapper">
 			<div class="container">
 				<div class="row">
 					<div class="twelve columns">
-						<header>
-							<div class="titles">
-								<h1><span><span class="pink">S</span>ilvia <span class="pink">G</span>ala<span class="pink">ss</span>o</span></h1>
-								<h2><span class="smaller">editorial design</span></h2>
-							</div>
-							<div class="box-separator"></div>
-							<ul class="headline">
-								<li class="item"><span>impaginazione</span></li>
-								<li class="small-separator"><span class="separator circle"></span></li>
-								<li class="item"><span>grafica editoriale</span></li>
-								<li class="hidden"><span class="separator circle"></span></li>
-								<li class="clear item"><span>correzione bozze</span></li>
-								<li class="small-separator"><span class="separator circle"></span></li>
-								<li class="item"><span>revisione testi</span></li>
-							</ul>
-						</header>			
-					</div>
-				</div>
-				<div class="row">
-					<div class="twelve columns">
-						<h3 class="black-box">di cosa mi occupo<span class="en smaller"><span class="separator"></span>what I do</span></h3>
-
-						<ul class="what">
-							<li>libri<span class="en"><span class="separator"></span>books</span></li>
-							<li>cataloghi<span class="en"><span class="separator"></span>catalogues</span></li>
-							<li>brochures</li>
-							<li>dépliant</li>
-							<li>volantini<span class="en"><span class="separator"></span>flyers</span></li>
-							<li>biglietti da visita<span class="en"><span class="separator"></span>business cards</span></li>
-							<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
-						</ul>
-
-
-						<div class="find-me desktop">You can find me here!</div>
-						<ul class="find">
-							<li class="in"><a href="#">in</a></li>
-							<li class="fb"><a href="#">fb</a></li>
-							<li class="be"><a href="#">be</a></li>
-							<li class="pr"><a href="#">pr</a></li>
-							<li class="i"><a href="#">i</a></li>
-						</ul>
-						<div class="find-me mobile">You can find me here!</div>
-
-					</div>
-				</div>
-				<div class="row">
-					<div class="twelve columns">
-						<div class="box">
-							<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#" class="next-step step3">contattami</a>.</p>
-							<p class="en smaller">If you need more info or to request a free estimate, please <a href="#" class="next-step step3">contact me</a>.</p>
-							<p class="contact-info">info@silviagalasso.it / p.iva 01785320936</p>
+						<div class="titles">
+							<h1><span><span class="pink">S</span>ilvia <span class="pink">G</span>ala<span class="pink">ss</span>o</span></h1>
+							<h2><span class="smaller">editorial design</span></h2>
 						</div>
 						<div class="box-separator"></div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</div>
-	<div class="step step2">
-		<div class="wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="twelve columns">
-						<h3 class="black-box">portfolio</h3>
-						<p>Intro.</p>
-						<div class="portfolio owl-carousel owl-theme">
-							<div class="item"><img src="portfolio/portfolio-01.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-02.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-03.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-04.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-05.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-06.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-07.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-08.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-09.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-10.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-11.jpg" /></div>
-							<div class="item"><img src="portfolio/portfolio-12.jpg" /></div>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns">
+							<header>
+								<div class="titles">
+									<h1><span><span class="pink">S</span>ilvia <span class="pink">G</span>ala<span class="pink">ss</span>o</span></h1>
+									<h2><span class="smaller">editorial design</span></h2>
+								</div>
+								<div class="box-separator"></div>
+								<ul class="headline">
+									<li class="item"><span>impaginazione</span></li>
+									<li class="small-separator"><span class="separator circle"></span></li>
+									<li class="item"><span>grafica editoriale</span></li>
+									<li class="hidden"><span class="separator circle"></span></li>
+									<li class="clear item"><span>correzione bozze</span></li>
+									<li class="small-separator"><span class="separator circle"></span></li>
+									<li class="item"><span>revisione testi</span></li>
+								</ul>
+							</header>	
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="step step3">
-		<div class="wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="twelve columns">
-						<h3 class="black-box">Contattami<span class="en smaller"><span class="separator"></span>contact me</span></h3>
-						<br /><br />
-						<form class="form-horizontal" action="email.php">
-							<fieldset>
+		<div class="section" id="section1">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns">
+							<h3 class="black-box">di cosa mi occupo<span class="en smaller"><span class="separator"></span>what I do</span></h3>
 
-								<!-- Form Name -->
-								<legend>Form Name</legend>
+							<ul class="what">
+								<li>libri<span class="en"><span class="separator"></span>books</span></li>
+								<li>cataloghi<span class="en"><span class="separator"></span>catalogues</span></li>
+								<li>brochures</li>
+								<li>dépliant</li>
+								<li>volantini<span class="en"><span class="separator"></span>flyers</span></li>
+								<li>biglietti da visita<span class="en"><span class="separator"></span>business cards</span></li>
+								<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
+							</ul>
 
-								<!-- Text input-->
-								<div class="form-group">
-									<label class="col-md-4 control-label" for="email">Email<span class="en"><span class="separator"></span>Email</span></label>  
-									<div class="col-md-4">
-										<input name="email" class="form-control input-md" type="text">
-									</div>
-								</div>
 
-								<!-- Text input-->
-								<div class="form-group">
-									<label class="col-md-4 control-label" for="message">Nome<span class="en"><span class="separator"></span>Name</span></label>  
-									<div class="col-md-4">
-										<input name="message" class="form-control input-md" type="text">
-									</div>
-								</div>
+							<div class="find-me desktop">You can find me here!</div>
+							<ul class="find">
+								<li class="in"><a href="#">in</a></li>
+								<li class="fb"><a href="#">fb</a></li>
+								<li class="be"><a href="#">be</a></li>
+								<li class="pr"><a href="#">pr</a></li>
+								<li class="i"><a href="#">i</a></li>
+							</ul>
+							<div class="find-me mobile">You can find me here!</div>
 
-								<!-- Textarea -->
-								<div class="form-group">
-									<label class="col-md-4 control-label" for="message">Messaggio<span class="en"><span class="separator"></span>Message</span></label>
-									<div class="col-md-4">                     
-										<textarea class="form-control" name="message"></textarea>
-									</div>
-								</div>
-								<!-- Textarea -->
-								<div class="form-group">
-									<label class="col-md-4 control-label" for="recaptcha">&nbsp;</label>
-									<div class="col-md-4">                     
-										<div class="g-recaptcha" data-sitekey="6Ldp3xgTAAAAAMc1B0aqGVnLAco8unSmEDqoC8MZ"></div>
-									</div>
-								</div>
-								<!-- Textarea -->
-								<div class="form-group">
-									<label class="col-md-4 control-label">&nbsp;</label>
-									<div class="col-md-4">                     
-										<input type="submit" class="form-control" value="Invia / Submit" />
-									</div>
-								</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="twelve columns">
+							<div class="box">
+								<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#contact" class="next-step">contattami</a>.</p>
+								<p class="en smaller">If you need more info or to request a free estimate, please <a href="#contact" class="next-step">contact me</a>.</p>
+								<p class="contact-info">info@silviagalasso.it / p.iva 01785320936</p>
+							</div>
+							<div class="box-separator"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns">
+							<h3 class="black-box">portfolio</h3>
+							<p>Intro.</p>
+							<div class="portfolio owl-carousel owl-theme">
+								<div class="item"><img src="portfolio/portfolio-01.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-02.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-03.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-04.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-05.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-06.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-07.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-08.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-09.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-10.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-11.jpg" /></div>
+								<div class="item"><img src="portfolio/portfolio-12.jpg" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns">
+							<h3 class="black-box">Contattami<span class="en smaller"><span class="separator"></span>contact me</span></h3>
+							<br /><br />
+							<form class="form-horizontal" action="email.php">
+								<fieldset>
 
-							</fieldset>
-						</form>
-						<br /><br /><br /><br />
+									<!-- Form Name -->
+									<legend>Form Name</legend>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="email">Email<span class="en"><span class="separator"></span>Email</span></label>  
+										<div class="col-md-4">
+											<input name="email" class="form-control input-md" type="text">
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="message">Nome<span class="en"><span class="separator"></span>Name</span></label>  
+										<div class="col-md-4">
+											<input name="message" class="form-control input-md" type="text">
+										</div>
+									</div>
+
+									<!-- Textarea -->
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="message">Messaggio<span class="en"><span class="separator"></span>Message</span></label>
+										<div class="col-md-4">                     
+											<textarea class="form-control" name="message"></textarea>
+										</div>
+									</div>
+									<!-- Textarea -->
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="recaptcha">&nbsp;</label>
+										<div class="col-md-4">                     
+											<div class="g-recaptcha" data-sitekey="6Ldp3xgTAAAAAMc1B0aqGVnLAco8unSmEDqoC8MZ"></div>
+										</div>
+									</div>
+									<!-- Textarea -->
+									<div class="form-group">
+										<label class="col-md-4 control-label">&nbsp;</label>
+										<div class="col-md-4">                     
+											<input type="submit" class="form-control" value="Invia / Submit" />
+										</div>
+									</div>
+
+								</fieldset>
+							</form>
+							<br /><br /><br /><br />
+						</div>
 					</div>
 				</div>
 			</div>
