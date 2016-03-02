@@ -109,9 +109,9 @@ header .box-separator, #header .box-separator{
   min-height:1px;
 }
 .box{
-	border:1pt dotted rgb(226,0,122);
+	border:2pt dotted rgb(226,0,122);
 	margin:20pt auto;
-	padding:30pt 20pt;
+	padding:20pt 15pt;
   margin-bottom:0px;
   text-align: center;
 }
@@ -139,7 +139,7 @@ header .box-separator, #header .box-separator{
 	display: inline-block;
 }
 .separator:before{
-	content: " / ";
+	content: " | ";
 	display: inline-block; 
 	margin-left: 10px;
 	margin-right: 10px;
@@ -157,6 +157,9 @@ header .box-separator, #header .box-separator{
 .separator.circle:before{
   content: " • ";
   margin-left: 0;
+}
+.headline li.small-separator span.separator, .headline li.hidden span.separator{
+  font-size: 0.7em;
 }
 .en{
 	font-weight: 300;
@@ -181,8 +184,8 @@ ul.find{
 }
 ul.find li{
 	display: inline-block;
-	width: 15mm;
-	height: 15mm;
+	width: 20mm;
+  height: 20mm;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	/*TODO: fallbacks*/
@@ -218,9 +221,9 @@ ul.what li:before{
 div.find-me{
 	position: absolute;
 	font-size:0.01px;
-	left:-35mm;
-	width: 35mm;
-	height: 25mm;
+	left:-45mm;
+	width: 45mm;
+	height: 36mm;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	/*TODO: fallbacks*/
@@ -251,7 +254,7 @@ div.find-me.mobile{
   margin-bottom: 0pt;
 }
 .titles h2 span{
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 10px;
 }
 body, html {
@@ -318,8 +321,8 @@ body, html {
   ul.what .en{
     clear: both;
   }
-  ul.what .separator{
-    
+  ul.what li{
+    margin-bottom: 0;
   }
   header .titles{
     margin-bottom: 20pt;
@@ -371,6 +374,7 @@ body, html {
   }
   .titles h2 span{
     margin-top: 0px;
+    font-weight: 300;
   }
   #header .titles h1, #header .titles h2{
     min-height: 0;
@@ -384,6 +388,9 @@ body, html {
     font-size: 0.6em;
     line-height: 90px;
   }
+  ul.headline li.small-separator{
+    font-size: 1em;
+  }
   #header{
     height:50px;
   }
@@ -392,7 +399,11 @@ body, html {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
+  ul.find li{
+    width: 15mm;
+    height: 15mm;
+  }
 
   ul.headline li, ul.headline li.clear, ul.headline li:first-child {
     display: block;
