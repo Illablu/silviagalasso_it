@@ -3,6 +3,9 @@ GEM
   specs:
     dandelion (0.4.16)
       rugged (= 0.23.3)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (3.0.2)
     rugged (0.23.3)
 
 PLATFORMS
@@ -10,6 +13,7 @@ PLATFORMS
 
 DEPENDENCIES
   dandelion
+  net-sftp
 
 BUNDLED WITH
    1.10.6
