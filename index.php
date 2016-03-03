@@ -199,18 +199,18 @@
 							<h3 class="black-box">portfolio</h3>
 							<p>Intro.</p>
 							<div class="portfolio owl-carousel owl-theme">
-								<div class="item"><a href="portfolio/portfolio-01.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-01-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-02.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-02-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-03.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-03-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-04.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-04-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-05.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-05-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-06.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-06-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-07.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-07-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-08.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-08-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-09.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-09-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-10.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-10-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-11.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-11-th.jpg" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-12.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-12-th.jpg" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-01.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-01-th.jpg" alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-02.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-02-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-03.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-03-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-04.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-04-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-05.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-05-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-06.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-06-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-07.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-07-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-08.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-08-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-09.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-09-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-10.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-10-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-11.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-11-th.jpg"  alt="Portfolio" /></a></div>
+								<div class="item"><a href="portfolio/portfolio-12.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-12-th.jpg"  alt="Portfolio" /></a></div>
 							</div>
 						</div>
 					</div>
@@ -245,7 +245,7 @@
 									</div>
 									<div class="row">
 										<div class="six columns">
-											<label for="hiddenRecaptcha">&nbsp;</label>
+											<label>&nbsp;</label>
 											<div class="g-recaptcha" data-sitekey="6Ldp3xgTAAAAAMc1B0aqGVnLAco8unSmEDqoC8MZ"></div>
                       						<input type="hidden" class="my_cpa hiddencode required" name="hiddencode" id="hiddencode">  
 										</div>
