@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>SilviaGalasso.it</title>
+	<title>Silvia Galasso | Editorial Design</title>
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css" /> 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel='stylesheet' type='text/css' href="css/owl.carousel.css" />
@@ -17,6 +17,8 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<meta name="robots" content="noindex">
 	<meta name="googlebot" content="noindex">
+	<meta name="description" content="Impaginazione, Grafica editoriale, Correzione bozze, Revisione testi" />
+	<meta name="keywords" content="Silvia Galasso,editorial design,impaginazione,grafica editoriale,correzione bozze,revisione testi,libri,cataloghi,brochures,dépliant,volantini,biglietti da visita,compilazione e personalizzazione cv" />
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
