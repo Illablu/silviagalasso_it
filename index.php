@@ -264,7 +264,6 @@
 			</div>
 		</div>
 	</div>
-	<a id="ff">asda</a>
 	<script src="js/lightbox.min.js"></script>
 </body>
 </html>
