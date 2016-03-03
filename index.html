@@ -23,7 +23,10 @@
 	<script src="js/jquery-bigtext.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.fullpage.min.js"></script>
+	<script src='js/jquery-validate.min.js'></script>
+	<script src='js/jquery-validate.messages_it_en.js'></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
 	<script type="text/javascript">
 	$(document).ready(function() {
 	  $("header h1").bigtext({maxfontsize: 170});
@@ -59,7 +62,43 @@
 				}
 			}
 		});
-
+		$('.form').validate({
+			lang: 'it',
+			ignore: ":hidden:not(.my_cpa)",
+			rules:{
+				hiddencode: {
+			     required: function() {
+			         if(grecaptcha.getResponse() == '') {
+			             return true;
+			         } else {
+			             return false;
+			         }
+			     }
+				}
+			},
+			submitHandler: function(form) {
+				$.ajax({
+					type: "POST",
+					url: "email.php",
+					data: $(form).serialize(),
+					timeout: 3000,
+					success: function() {
+						$('.form fieldset').fadeOut(300, function(){
+							$('.form').validate().resetForm();
+							$('.form')[0].reset();
+							grecaptcha.reset();
+							$('.form fieldset').delay(10000).fadeIn(300);
+							$('.form .feedback').html("<p class='submission-confirm success'>Grazie! Il tuo messaggio è stato inviato | Thank You! Your message has been sent.</p>").fadeIn(300).delay(10000).fadeOut(300);
+						});
+						
+					},
+					error: function() {
+						$('.form .feedback').html("<p class='submission-confirm error'>Qualcosa è andato storto, riprova | There was a problem with your submission, please try again.</p>").fadeIn(300).delay(10000).fadeOut(300);
+					}
+				});
+				return false;
+			}
+		});
 	});
 </script>
 </head>
@@ -183,51 +222,40 @@
 						<div class="twelve columns">
 							<h3 class="black-box">Contattami<span class="en smaller"><span class="separator"></span>contact me</span></h3>
 							<br /><br />
-							<form class="form-horizontal" action="email.php">
+
+							<form class="form">
 								<fieldset>
-
-									<!-- Form Name -->
-									<legend>Form Name</legend>
-
-									<!-- Text input-->
-									<div class="form-group">
-										<label class="col-md-4 control-label" for="email">Email<span class="en"><span class="separator"></span>Email</span></label>  
-										<div class="col-md-4">
-											<input name="email" class="form-control input-md" type="text">
+									<div class="row">
+										<div class="six columns">
+											<label for="email">Email<span class="en"><span class="separator"></span>Email</span></label>  
+											<input name="email" id="email" placeholder="youremail@yourwebsite.com" required class="u-full-width" type="email">
+										</div>
+										<div class="six columns">
+											<label for="name">Nome<span class="en"><span class="separator"></span>Name</span></label>  
+											<input id="name" name="name" placeholder="Your name" required class="u-full-width" type="text">
 										</div>
 									</div>
-
-									<!-- Text input-->
-									<div class="form-group">
-										<label class="col-md-4 control-label" for="message">Nome<span class="en"><span class="separator"></span>Name</span></label>  
-										<div class="col-md-4">
-											<input name="message" class="form-control input-md" type="text">
+									<div class="row">
+										<div class="twelve columns">
+											<label for="message">Messaggio<span class="en"><span class="separator"></span>Message</span></label>
+											<textarea placeholder="Your message" class="u-full-width" required name="message" id="message"></textarea>
 										</div>
 									</div>
-
-									<!-- Textarea -->
-									<div class="form-group">
-										<label class="col-md-4 control-label" for="message">Messaggio<span class="en"><span class="separator"></span>Message</span></label>
-										<div class="col-md-4">                     
-											<textarea class="form-control" name="message"></textarea>
-										</div>
-									</div>
-									<!-- Textarea -->
-									<div class="form-group">
-										<label class="col-md-4 control-label" for="recaptcha">&nbsp;</label>
-										<div class="col-md-4">                     
+									<div class="row">
+										<div class="six columns">
+											<label for="hiddenRecaptcha">&nbsp;</label>
 											<div class="g-recaptcha" data-sitekey="6Ldp3xgTAAAAAMc1B0aqGVnLAco8unSmEDqoC8MZ"></div>
+                      						<input type="hidden" class="my_cpa hiddencode required" name="hiddencode" id="hiddencode">  
 										</div>
 									</div>
-									<!-- Textarea -->
-									<div class="form-group">
-										<label class="col-md-4 control-label">&nbsp;</label>
-										<div class="col-md-4">                     
-											<input type="submit" class="form-control" value="Invia / Submit" />
+									<div class="row">
+										<div class="six columns">
+											<label class="col-md-4 control-label">&nbsp;</label>
+											<input type="submit" value="Invia / Submit" />
 										</div>
 									</div>
-
 								</fieldset>
+								<div class="feedback"></div>
 							</form>
 							<br /><br /><br /><br />
 						</div>
@@ -236,6 +264,7 @@
 			</div>
 		</div>
 	</div>
+	<a id="ff">asda</a>
 	<script src="js/lightbox.min.js"></script>
 </body>
 </html>
