@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require "config.php"; ?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8"> 
@@ -171,7 +171,7 @@
 								<li class="pr"><a href="#">pr</a></li>
 								<li class="i"><a href="#">i</a></li>
 							</ul>
-							<p class="contact-info">info@silviagalasso.it / p.iva 01785320936</p>
+							<p class="contact-info"><?php echo $recipient_email; ?> / p.iva 01785320936</p>
 							<div class="find-me mobile">You can find me here!</div>
 
 						</div>
@@ -228,17 +228,17 @@
 									<div class="row">
 										<div class="six columns">
 											<label for="email">Email<span class="en"><span class="separator"></span>Email</span></label>  
-											<input name="email" id="email" placeholder="youremail@yourwebsite.com" required class="u-full-width" type="email">
+											<input name="email" id="email" placeholder="" required class="u-full-width" type="email">
 										</div>
 										<div class="six columns">
 											<label for="name">Nome<span class="en"><span class="separator"></span>Name</span></label>  
-											<input id="name" name="name" placeholder="Your name" required class="u-full-width" type="text">
+											<input id="name" name="name" placeholder="" required class="u-full-width" type="text">
 										</div>
 									</div>
 									<div class="row">
 										<div class="twelve columns">
 											<label for="message">Messaggio<span class="en"><span class="separator"></span>Message</span></label>
-											<textarea placeholder="Your message" class="u-full-width" required name="message" id="message"></textarea>
+											<textarea placeholder="" class="u-full-width" required name="message" id="message"></textarea>
 										</div>
 									</div>
 									<div class="row">

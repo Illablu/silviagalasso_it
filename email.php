@@ -11,7 +11,7 @@ require "config.php";
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "stefano.franzin@gmail.com";
+        $recipient = $recipient_email;
 
         // Set the email subject.
         $subject = "Nuovo contatto da silviagalasso.it da $name";

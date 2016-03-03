@@ -15,5 +15,6 @@
 /public
 
 .powrc
+config.php
 production.yml
 development.yml

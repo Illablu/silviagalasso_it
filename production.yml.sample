@@ -6,6 +6,7 @@ password: password
 
 exclude:
     - .gitignore
+    - config.php.sample
     - production.yml
     - development.yml
     - Capfile

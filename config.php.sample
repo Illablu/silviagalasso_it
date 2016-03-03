@@ -1,0 +1,3 @@
+<?php 
+$recipient_email = "recipient@example.com";
+?>
