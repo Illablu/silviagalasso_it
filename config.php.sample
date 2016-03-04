@@ -1,3 +1,7 @@
 <?php 
 $recipient_email = "recipient@example.com";
+$smtp_host = "smpt.example.com";
+$smtp_post = 25;
+$smtp_user = "";
+$smtp_password = "";
 ?>
