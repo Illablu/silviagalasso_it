@@ -167,11 +167,11 @@
 
 							<div class="find-me desktop">You can find me here!</div>
 							<ul class="find">
-								<li class="in"><a href="#">in</a></li>
-								<li class="fb"><a href="#">fb</a></li>
-								<li class="be"><a href="#">be</a></li>
-								<li class="pr"><a href="#">pr</a></li>
-								<li class="i"><a href="#">i</a></li>
+								<li class="in"><a href="http://it.linkedin.com/in/silgalasso" target="_blank">in</a></li>
+								<li class="fb"><a href="http://www.facebook.com/silviagalasso.it/" target="_blank">fb</a></li>
+								<li class="be"><a href="http://www.behance.net/silvia_galasso" target="_blank">be</a></li>
+								<li class="pr"><a href="http://it.pinterest.com/silviagalasso/" target="_blank">pr</a></li>
+								<li class="i"><a href="http://www.instagram.com/sil.galasso/" target="_blank">i</a></li>
 							</ul>
 							<p class="contact-info"><?php echo $recipient_email; ?> / p.iva 01785320936</p>
 							<div class="find-me mobile">You can find me here!</div>
