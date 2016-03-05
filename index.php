@@ -209,8 +209,6 @@
 								<div class="item"><a href="portfolio/portfolio-08.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-08-th.jpg"  alt="Portfolio" /></a></div>
 								<div class="item"><a href="portfolio/portfolio-09.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-09-th.jpg"  alt="Portfolio" /></a></div>
 								<div class="item"><a href="portfolio/portfolio-10.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-10-th.jpg"  alt="Portfolio" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-11.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-11-th.jpg"  alt="Portfolio" /></a></div>
-								<div class="item"><a href="portfolio/portfolio-12.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-12-th.jpg"  alt="Portfolio" /></a></div>
 							</div>
 						</div>
 					</div>
