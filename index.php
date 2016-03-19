@@ -24,7 +24,6 @@
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 	<script src="js/jquery-bigtext.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.fullpage.min.js"></script>
 	<script src='js/jquery-validate.min.js'></script>
 	<script src='js/jquery-validate.messages_it_en.js'></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -63,22 +62,6 @@
 	    owl.trigger('owl.prev');
 	  })
 
-		$('#fullpage').fullpage({
-			responsiveWidth: 768,
-			responsiveHeight: 768,
-			anchors: ['intro', 'what', 'portfolio', 'contact'],
-			afterLoad: function(anchorLink, index){
-				if(index == 1){
-					$('#header').animate({
-						opacity: '0'
-					}, 100, 'easeOutSine');
-				}else{
-					$('#header').animate({
-						opacity: '1'
-					}, 1000, 'easeOutSine');
-				}
-			}
-		});
 		$('.form').validate({
 			lang: 'it',
 			ignore: ":hidden:not(.my_cpa)",
