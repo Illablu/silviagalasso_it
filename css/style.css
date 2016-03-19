@@ -131,14 +131,12 @@ header .box-separator, #header .box-separator{
 }
 
 .box{
-	border:2pt dotted rgb(226,0,122);
 	margin:20pt auto;
 	padding:20pt 15pt;
   margin-bottom:0px;
   text-align: center;
 }
 .box-separator{
-  background: url('../img/box_background_cut.png') top right no-repeat;
   min-height:35px;
 }
 .box ul li{

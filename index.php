@@ -146,7 +146,7 @@
 									<h1><span><span class="pink">S</span>ilvia <span class="pink">G</span>ala<span class="pink">ss</span>o</span></h1>
 									<h2><span class="smaller">editorial design</span></h2>
 								</div>
-								<div class="box-separator"></div>
+								
 								<ul class="headline">
 									<li class="item"><span>impaginazione</span></li>
 									<li class="small-separator"><span class="separator circle"></span></li>
