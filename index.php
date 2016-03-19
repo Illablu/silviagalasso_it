@@ -46,9 +46,9 @@
 	<meta name="theme-color" content="#ffffff">	
 	<script type="text/javascript">
 	$(document).ready(function() {
-	  $("header h1").bigtext({maxfontsize: 170});
-	  $("header h2").bigtext({maxfontsize: 150});
-	  $(".headline li.item").bigtext({maxfontsize: 25});
+ 	  //$("header h1").bigtext({maxfontsize: 170});
+	  //$("header h2").bigtext({maxfontsize: 150});
+	  //$(".headline li.item").bigtext({maxfontsize: 25});
 
 	  $('.portfolio').owlCarousel({
 	    singleItem: false,

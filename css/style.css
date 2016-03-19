@@ -33,7 +33,7 @@ li, p{
 }
 p{
   margin-bottom: 0pt;
-  padding:10pt 20pt;
+  padding:10pt 0pt;
 }
 p.contact-info{
   margin-top:10pt;
@@ -51,6 +51,7 @@ header{
   width:49%;
   display: inline-block;
   min-height: 100px;
+  line-height: 100px;
 }
 .titles h1{
   
@@ -64,6 +65,9 @@ header{
 .titles h1 > span{
   padding:0;
   float: left;
+}
+ul.headline li{
+  font-size:2.0em;
 }
 #header{
   position:fixed;
@@ -96,7 +100,15 @@ header{
   min-height: 0;
   height: 70px;
 }
-
+.titles h2{
+  font-size: 3.5em;
+}
+.titles h2 span{
+  line-height: 2em;
+}
+header .titles{
+  background: url('../img/header_background_border.png') center center no-repeat;
+}
 header .box-separator, #header .box-separator{
   border-bottom:1pt dotted rgb(4,9,14);
   background: url('../img/header_background_cut.png') bottom left no-repeat;
@@ -142,6 +154,7 @@ header .box-separator, #header .box-separator{
   display: inline;
 }
 .black-box{
+  margin-top: 30px;
 	padding-left:5pt;
 	padding-right:5pt;
 	background-color:rgb(4,9,14);
@@ -188,6 +201,10 @@ ul.what, ul.find{
 ul.what{
   margin-bottom: 0;
 }
+ul.what li{
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
 ul.find{
 	margin-top: 20pt;
   padding-left: 10px;
@@ -223,8 +240,9 @@ ul.find li.be{background-image:  none, url('../img/behance.png'); }
 ul.find li.pr{background-image:  none, url('../img/pinterest.png'); }
 ul.find li.i{background-image:  none, url('../img/instagram_black.png'); }
 
-ul.what li:before{
+ul.what li > span:before{
 	content: "»";
+  float: left;
 	margin-right: 10pt;	
 }
 
@@ -308,6 +326,14 @@ body, html {
 }
 /*Media*/
 
+@media (max-width: 1024px) {
+  ul.headline li{
+    font-size:1.5em;
+  }
+  div.find-me.desktop{display: none;}
+  div.find-me.mobile{display: block;}
+
+}
 @media (max-width: 960px) {
   p{
     padding-left:0;
@@ -325,9 +351,6 @@ body, html {
     justify-content: space-between;
     margin-bottom: 0;
   }
-  div.find-me.desktop{display: none;}
-  div.find-me.mobile{display: block;}
-
   header ul li{
     display: inline-block;
     width: 49%;
@@ -346,6 +369,12 @@ body, html {
 }
 
 @media (max-width: 850px) {
+  header .titles h1{
+    font-size: 4em;
+  }
+  header .titles h2{
+    font-size: 3.1em;
+  }
   ul.headline{
     display: block;
   }
@@ -373,17 +402,17 @@ body, html {
   ul.headline li.small-separator{
     width: 2%;
   }
-
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   header .titles h1, header .titles h2{
-    display: block;
-    float: none;
-    clear: both;
-    min-height:0;
-    width: 100%;
-    text-align: left;
-    line-height: 1.5em;
+    min-height:100px;
+    line-height:100px;
+  }
+  header .titles h1{
+    font-size: 4em;
+  }
+  header .titles h2{
+    font-size: 3.1em;
   }
   #header .titles h1, #header .titles h2{
     width: 49%;
@@ -404,8 +433,11 @@ body, html {
     font-size: 0.6em;
     line-height: 90px;
   }
+  ul.headline li{
+    font-size: 2em;
+  }
   ul.headline li.small-separator{
-    font-size: 1em;
+    font-size: 1.5em;
   }
   #header{
     height:50px;
@@ -415,12 +447,51 @@ body, html {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 735px) {
+  header .titles h1, header .titles h2{
+    min-height: 80px;
+    line-height: 80px;
+  }
+  header .titles h1{
+    font-size: 3em;
+  }
+  header .titles h2{
+    font-size: 2.5em;
+  }
+  ul.headline li{
+    font-size: 1.5em; 
+  }
+}
+@media (max-width: 490px) {
+  header .titles h1, header .titles h2{
+    min-height: 60px;
+    line-height: 60px;
+  }
+  header .titles h1{
+    font-size: 2.5em;
+  }
+  header .titles h2{
+    font-size: 2em;
+  }
+}
+@media (max-width: 440px) {
+  header .titles{
+    background: none;
+  }
+  header .titles h1, header .titles h2{
+    text-align: center;
+    display: block;
+    width: 100%;
+    line-height: auto;
+    min-height: 0;
+  }
+  header .titles h1 span, header .titles h2 span{
+    float: none;
+  }
   ul.find li{
     width: 15mm;
     height: 15mm;
   }
-
   ul.headline li, ul.headline li.clear, ul.headline li:first-child {
     display: block;
     width: 100%;
