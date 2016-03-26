@@ -155,8 +155,8 @@
 							<ul class="what">
 								<li>libri<span class="en"><span class="separator"></span>books</span></li>
 								<li>cataloghi<span class="en"><span class="separator"></span>catalogues</span></li>
-								<li>brochures</li>
-								<li>dépliant</li>
+								<li>brochures<span class="en"></span></li>
+								<li>dépliant<span class="en"></span></li>
 								<li>volantini<span class="en"><span class="separator"></span>flyers</span></li>
 								<li>biglietti da visita<span class="en"><span class="separator"></span>business cards</span></li>
 								<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
