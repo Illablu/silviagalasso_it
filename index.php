@@ -230,13 +230,21 @@
 									<a href="portfolio/portfolio-07.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-07-th.jpg"  alt="Portfolio" /></a>
 									<div class="description">
 										<h5>graphic design</h5>
+										<p>Prove di grafica pubblicitaria e riproduzione grafica di oggetti tridimensionali<br />
+										<span class="details">immagini prese da Internet a puro scopo esercitativo / copyright non verificato</span></p>
+									</div>
+								</div>
+								<div class="item">
+									<a href="portfolio/portfolio-08.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-08-th.jpg"  alt="Portfolio" /></a>
+									<div class="description">
+										<h5>graphic design</h5>
 										<p>Esercizi di fotoritocco / restauro fotografico digitale<br />
 										<span class="details">immagine presa da Internet a puro scopo esercitativo / copyright non verificato</span>
 									</p>
 									</div>
 								</div>
 								<div class="item">
-									<a href="portfolio/portfolio-08.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-08-th.jpg"  alt="Portfolio" /></a>
+									<a href="portfolio/portfolio-09.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-09-th.jpg"  alt="Portfolio" /></a>
 									<div class="description">
 										<h5>graphic design</h5>
 										<p>Prove di grafica pubblicitaria / fotoritocco<br />
@@ -245,16 +253,11 @@
 									</div>
 								</div>
 								<div class="item">
-									<a href="portfolio/portfolio-09.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-09-th.jpg"  alt="Portfolio" /></a>
+									<a href="portfolio/portfolio-10.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-10-th.jpg"  alt="Portfolio" /></a>
 									<div class="description">
 										<h5>graphic design</h5>
 										<p>Esercizi di grafica vettoriale<br />
 										<span class="details">immagine presa da Internet a puro scopo esercitativo / copyright non verificato</p>
-									</div>
-								</div>
-								<div class="item">
-									<a href="portfolio/portfolio-10.jpg" data-lightbox="portfolio"><img src="portfolio/portfolio-10-th.jpg"  alt="Portfolio" /></a>
-									<div class="description">
 									</div>
 								</div>
 							</div>
