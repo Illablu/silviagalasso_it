@@ -338,9 +338,7 @@ body, html {
 }
 @media (max-width: 960px) {
   p, p.contact-info{
-    padding-left:0;
-    padding-right:0;
-    text-align: center;
+    text-align: left;
   }
   .titles h1, .titles h2{
     min-height: 50px;
