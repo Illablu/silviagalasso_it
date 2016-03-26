@@ -36,8 +36,9 @@ p{
   padding:10pt 0pt;
 }
 p.contact-info{
+  padding: 10pt 15pt;
   margin-top:10pt;
-	text-align: center;
+	text-align: left;
 }
 .slide{
   padding-top:10px;
@@ -131,10 +132,10 @@ header .box-separator, #header .box-separator{
 }
 
 .box{
-	margin:20pt auto;
+	margin:0 auto 20pt auto;
 	padding:20pt 15pt;
   margin-bottom:0px;
-  text-align: center;
+  text-align: left;
 }
 .box-separator{
   min-height:35px;
@@ -336,7 +337,7 @@ body, html {
 
 }
 @media (max-width: 960px) {
-  p{
+  p, p.contact-info{
     padding-left:0;
     padding-right:0;
     text-align: center;
