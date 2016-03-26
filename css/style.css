@@ -36,7 +36,7 @@ p{
   padding:10pt 0pt;
 }
 p.contact-info{
-  padding: 10pt 15pt;
+  padding: 10pt 15pt 10pt 0;
   margin-top:10pt;
 	text-align: left;
 }
@@ -133,7 +133,7 @@ header .box-separator, #header .box-separator{
 
 .box{
 	margin:0 auto 20pt auto;
-	padding:20pt 15pt;
+	padding:20pt 0;
   margin-bottom:0px;
   text-align: left;
 }
@@ -153,7 +153,7 @@ header .box-separator, #header .box-separator{
   display: inline;
 }
 .black-box{
-  margin-top: 30px;
+  margin: 70px auto 20px auto;
 	padding-left:5pt;
 	padding-right:5pt;
 	background-color:rgb(4,9,14);

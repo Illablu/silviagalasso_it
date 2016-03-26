@@ -161,31 +161,8 @@
 								<li>biglietti da visita<span class="en"><span class="separator"></span>business cards</span></li>
 								<li>compilazione e personalizzazione cv<span class="en"><span class="separator"></span>resume layout and customization</span></li>
 							</ul>
-
-
-							<div class="find-me desktop">You can find me here!</div>
-							<div class="find-me mobile">You can find me here!</div>
-							<ul class="find">
-								<li class="in"><a href="http://it.linkedin.com/in/silgalasso" target="_blank">in</a></li>
-								<li class="fb"><a href="http://www.facebook.com/silviagalasso.it/" target="_blank">fb</a></li>
-								<li class="be"><a href="http://www.behance.net/silvia_galasso" target="_blank">be</a></li>
-								<li class="pr"><a href="http://it.pinterest.com/silviagalasso/" target="_blank">pr</a></li>
-								<li class="i"><a href="http://www.instagram.com/sil.galasso/" target="_blank">i</a></li>
-							</ul>
-							<p class="contact-info"><?php echo $recipient_email; ?> / p.iva 01785320936</p>
-
 						</div>
 					</div>
-					<div class="row">
-						<div class="twelve columns">
-							<div class="box">
-								<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#contact" class="next-step">contattami</a>.</p>
-								<p class="en smaller">If you need more info or to request a free estimate, please <a href="#contact" class="next-step">contact me</a>.</p>
-							</div>
-							<div class="box-separator"></div>
-						</div>
-					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -286,14 +263,33 @@
 				</div>
 			</div>
 		</div>
+
+
 		<div class="section" id="section3">
 			<div class="wrapper">
 				<div class="container">
 					<div class="row">
 						<div class="twelve columns">
 							<h3 class="black-box">Contattami<span class="en smaller"><span class="separator"></span>contact me</span></h3>
-							<br /><br />
-
+							<div class="box">
+								<p>Per informazioni e per ricevere un preventivo gratuito, <a href="#contact" class="next-step">contattami</a>.</p>
+								<p class="en smaller">If you need more info or to request a free estimate, please <a href="#contact" class="next-step">contact me</a>.</p>
+							</div>
+							<div class="find-me desktop">You can find me here!</div>
+							<div class="find-me mobile">You can find me here!</div>
+							<ul class="find">
+								<li class="in"><a href="http://it.linkedin.com/in/silgalasso" target="_blank">in</a></li>
+								<li class="fb"><a href="http://www.facebook.com/silviagalasso.it/" target="_blank">fb</a></li>
+								<li class="be"><a href="http://www.behance.net/silvia_galasso" target="_blank">be</a></li>
+								<li class="pr"><a href="http://it.pinterest.com/silviagalasso/" target="_blank">pr</a></li>
+								<li class="i"><a href="http://www.instagram.com/sil.galasso/" target="_blank">i</a></li>
+							</ul>
+							<p class="contact-info"><?php echo $recipient_email; ?> / p.iva 01785320936</p>
+							<div class="box-separator"></div>		
+						</div>
+					</div>
+					<div class="row">
+						<div class="twelve columns">
 							<form class="form">
 								<fieldset>
 									<div class="row">
