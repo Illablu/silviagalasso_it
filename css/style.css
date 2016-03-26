@@ -440,7 +440,7 @@ body, html {
     height: 70px;
   }
   #header .titles h1{
-    font-size: 2.5em;
+    font-size: 4em;
     line-height: 2.5em;
   }
   #header .titles h2 .smaller{
@@ -473,7 +473,8 @@ body, html {
     font-size: 2.5em;
   }
   ul.headline li{
-    font-size: 1.5em; 
+    font-size: 2em; 
+    line-height: 1.5em; 
   }
 }
 @media (max-width: 490px) {
@@ -482,10 +483,10 @@ body, html {
     line-height: 60px;
   }
   header .titles h1{
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   header .titles h2{
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 @media (max-width: 440px) {
