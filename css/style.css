@@ -1,0 +1,209 @@
+/* Default page styles */
+*{
+  font-family: 'Avenir LT Std 65 Medium';
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: Bebas-neue;
+  color: #E50C7E;
+}
+a{
+  color: #E50C7E;
+}
+/* Custom page styles */
+.header{
+  margin-bottom: 2em;
+}
+.header .header__navbar{
+  background-color: #1E1E1C;
+}
+.footer{
+  background-color: #1E1E1C;
+}
+.footer .footer__content{
+  text-align: center;
+}
+.footer .footer__content .text{
+  color: #FFFFFF;
+}
+.content{
+  border-left: 0.25rem solid #E50C7E;
+  margin-left: 1.563rem;
+  padding-left: 1.375em;
+  padding-right: 1.375em;
+  padding-bottom: 1em;
+}
+.header__content{
+  padding-top: 0.65em;
+  padding-bottom: 0.65em;
+  padding-left: 0.6em;
+  padding-right: 1.375em;
+}
+.banner{
+  margin-top: 0.25em;
+  border-top: 0.25rem solid #E50C7E;
+  border-bottom: 0.25rem solid #E50C7E;
+  overflow: hidden;
+  text-align: center;
+}
+.banner--footer{
+  border-top: 0.25rem solid #FFFFFF;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+.banner__image{
+  min-width: 444px;
+  margin:0 -100%;
+}
+.brand{}
+.navbar .navbar-brand.brand__title{
+  font-family: Bebas-neue;
+  font-size: 2.125rem;
+  line-height: 100%;
+  white-space: nowrap;
+  color: #E50C7E;
+  border-bottom: 1px solid #FFFFFF;
+  text-align: justify;
+}
+.brand__subtitle{
+  font-family: 'Avenir LT Std 35 Light';
+  white-space: nowrap;
+  font-size: 1.335rem;
+  color: #FFFFFF;
+  text-align: justify;
+}
+.navbar .navbar-toggler{
+  border: 0;
+  background-size: 2.875rem 1.875rem;
+}
+
+.section_link{
+  font-family: Bebas-neue; 
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+/* Social links */
+.social_links .social_link{
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center center;
+}
+.social_links .social_link--bw{
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.social_links .social_link .social_link__link,
+.social_links .social_link--bw .social_link__link{
+  font-size:0.01px;
+  width:100%;
+  height:100%;
+  display: block;
+}
+.social_links .social_link:hover, 
+.social_links .social_link,
+.social_links .social_link--bw:hover, 
+.social_links .social_link--bw{
+  background-position: center center;
+  transition: background-size 0.2s ease-in-out;
+  -moz-transition: background-size 0.2s ease-in-out;
+  -ms-transition: background-size 0.2s ease-in-out;
+  -o-transition: background-size 0.2s ease-in-out;
+  -webkit-transition: background-size 0.2s ease-in-out;
+}
+.social_links .social_link:hover{
+  background-size: 110% 110%;
+}
+.social_links.menu__social_links{
+  text-align: right;
+}
+.social_links.menu__social_links .social_link--bw{
+  margin: 0.3em 0.9em;
+}
+
+.social_links .social_link__in{background-image:  none,url('../img/social_linkedin.png'); }
+.social_links .social_link__fb{background-image:  none, url('../img/social_facebook.png'); }
+.social_links .social_link__be{background-image:  none, url('../img/social_behance.png'); }
+.social_links .social_link__pr{background-image:  none, url('../img/social_pinterest.png'); }
+.social_links .social_link__i{background-image:  none, url('../img/social_instagram.png'); }
+.social_links .social_link__ac{background-image:  none, url('../img/social_academia.png'); }
+
+.social_links .social_link__in--bw{background-image:  none,url('../img/social_linkedin_bw.jpg'); }
+.social_links .social_link__fb--bw{background-image:  none, url('../img/social_facebook_bw.jpg'); }
+.social_links .social_link__be--bw{background-image:  none, url('../img/social_behance_bw.jpg'); }
+.social_links .social_link__pr--bw{background-image:  none, url('../img/social_pinterest_bw.jpg'); }
+.social_links .social_link__i--bw{background-image:  none, url('../img/social_instagram_bw.jpg'); }
+.social_links .social_link__ac--bw{background-image:  none, url('../img/social_academia_bw.jpg'); }
+
+.list-inline-item{
+  margin-bottom: 0.25rem;
+}
+
+/*
+* Menu
+* --------------------------------------------------
+*/
+.navbar-collapse {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  width: 50%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.navbar-collapse .nav-item{
+  background-color: #FFFFFF;
+}
+.navbar-collapse .navbar-nav{
+  padding-top: 1.25rem;
+}
+.navbar-collapse .nav-item .nav-link,
+.navbar-collapse .nav-item .nav-link:link,
+.navbar-collapse .nav-item .nav-link:active,
+.navbar-collapse .nav-item .nav-link:focus
+{
+  color: #1D1D1B;
+  font-family: Bebas-neue;
+  font-size: 1.25rem;
+  line-height: 168%;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 1.188em;
+}
+.navbar-collapse .nav-item .nav-link:focus,
+.navbar-collapse .nav-item.active .nav-link{
+  color: #E50C7E;
+}
+.navbar-collapse .nav-item .nav-link.section_link{
+  font-size: 0.938rem;
+  color: #1D1D1B;
+}
+
+
+@media screen and (min-width: 540px){
+  /* Sticky footer styles */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+  }
+}
