@@ -25,8 +25,14 @@ a{
 .footer .footer__content .text{
   color: #FFFFFF;
 }
+.footer .footer__content--copyright{
+  border-top: 0.20rem solid #FFFFFF;
+}
+.footer .footer__content--copyright .text{
+  font-size: 65%;
+}
 .content{
-  border-left: 0.25rem solid #E50C7E;
+  border-left: 0.20rem solid #E50C7E;
   margin-left: 1.563rem;
   padding-left: 1.375em;
   padding-right: 1.375em;
@@ -39,15 +45,16 @@ a{
   padding-right: 1.375em;
 }
 .banner{
-  margin-top: 0.25em;
-  border-top: 0.25rem solid #E50C7E;
-  border-bottom: 0.25rem solid #E50C7E;
+  margin-top: 0.20rem;
+  border-top: 0.20rem solid #E50C7E;
+  border-bottom: 0.20rem solid #E50C7E;
   overflow: hidden;
   text-align: center;
 }
 .banner--footer{
-  border-top: 0.25rem solid #FFFFFF;
-  border-bottom: 0.25rem solid #FFFFFF;
+  margin-top: 0;
+  border-top: 0.20rem solid #FFFFFF;
+  border-bottom: 0.20rem solid #FFFFFF;
 }
 .banner__image{
   min-width: 444px;
