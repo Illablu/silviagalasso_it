@@ -25,10 +25,10 @@ a{
 .footer .footer__content .text{
   color: #FFFFFF;
 }
-.footer .footer__content--copyright{
+.footer .footer__container--copyright{
   border-top: 0.20rem solid #FFFFFF;
 }
-.footer .footer__content--copyright .text{
+.footer .footer__container--copyright .footer__content .text{
   font-size: 65%;
 }
 .content{
@@ -76,12 +76,25 @@ a{
   font-size: 1.335rem;
   color: #FFFFFF;
   text-align: justify;
+  display: block;
+  clear: both;
+}
+.brand__sidetitle{
+  font-family: 'Avenir LT Std 35 Light';
+  white-space: nowrap;
+  font-size: 1.335rem;
+  color: #FFFFFF;
+  text-align: justify;
+  border-left: 2px solid #FFFFFF;
+  padding-left: 0.625em;
+  margin-top: 0.35em;
+  line-height: 1.3em;
+  display: inline-block;
 }
 .navbar .navbar-toggler{
   border: 0;
   background-size: 2.875rem 1.875rem;
 }
-
 .section_link{
   font-family: Bebas-neue; 
   text-transform: uppercase;
@@ -153,58 +166,59 @@ a{
   margin-bottom: 0.25rem;
 }
 
-/*
-* Menu
-* --------------------------------------------------
-*/
-.navbar-collapse {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 10000;
-  width: 50%;
-  height: 100%;
-  background-color: #FFFFFF;
-   overflow-y:scroll;
-    overflow-x:hidden;
-}
+@media screen and (max-width: 992px){
+  /*
+  * Mobile mennu
+  * --------------------------------------------------
+  */
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+     overflow-y:scroll;
+      overflow-x:hidden;
+  }
 
-.navbar-collapse .nav-item{
-  background-color: #FFFFFF;
-}
-.navbar-collapse .navbar-nav{
-  padding-top: 1.25rem;
-}
-.navbar-collapse .nav-item .nav-link,
-.navbar-collapse .nav-item .nav-link:link,
-.navbar-collapse .nav-item .nav-link:active,
-.navbar-collapse .nav-item .nav-link:focus
-{
-  color: #1D1D1B;
-  font-family: Bebas-neue;
-  font-size: 1.25rem;
-  line-height: 168%;
-  text-align: right;
-  text-transform: uppercase;
-  padding-right: 1.188em;
-}
-.navbar-collapse .nav-item.active .nav-link:link,
-.navbar-collapse .nav-item.active .nav-link:active,
-.navbar-collapse .nav-item .nav-link:hover,
-.navbar-collapse .nav-item .nav-link:focus,
-.navbar-collapse .nav-item.active .nav-link{
-  color: #E50C7E;
-}
-.navbar-collapse .nav-item .nav-link,
-.navbar-collapse .nav-item.active .nav-link:hover{
-  color: #1D1D1B;
-}
-.navbar-collapse .nav-item.active .nav-link.section_link{
-  font-size: 0.938rem;
-}
+  .navbar-collapse .nav-item{
+    background-color: #FFFFFF;
+  }
+  .navbar-collapse .navbar-nav{
+    padding-top: 1.25rem;
+  }
+  .navbar-collapse .nav-item .nav-link,
+  .navbar-collapse .nav-item .nav-link:link,
+  .navbar-collapse .nav-item .nav-link:active,
+  .navbar-collapse .nav-item .nav-link:focus
+  {
+    color: #1D1D1B;
+    font-family: Bebas-neue;
+    font-size: 1.25rem;
+    line-height: 168%;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 1.188em;
+  }
+  .navbar-collapse .nav-item.active .nav-link:link,
+  .navbar-collapse .nav-item.active .nav-link:active,
+  .navbar-collapse .nav-item .nav-link:hover,
+  .navbar-collapse .nav-item .nav-link:focus,
+  .navbar-collapse .nav-item.active .nav-link{
+    color: #E50C7E;
+  }
+  .navbar-collapse .nav-item .nav-link,
+  .navbar-collapse .nav-item.active .nav-link:hover{
+    color: #1D1D1B;
+  }
+  .navbar-collapse .nav-item.active .nav-link.section_link{
+    font-size: 0.938rem;
+  }
 
-
-@media screen and (min-width: 540px){
+}
+@media screen and (min-width: 993px){
   /* Sticky footer styles */
   html {
     position: relative;
@@ -212,14 +226,65 @@ a{
   }
   body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-bottom: 2.5rem;
   }
   .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
+    height: 2.5rem;
+    line-height: 2.5rem; /* Vertically center the text there */
+  }
+
+  /*
+  * Main mennu
+  * --------------------------------------------------
+  */
+  .navbar-collapse .nav-item{
+    display: table-cell;
+    vertical-align: middle; 
+    float: none;
+    padding-right: 1.25rem;
+  }
+  .navbar-collapse .nav-item .nav-link,
+  .navbar-collapse .nav-item .nav-link:link,
+  .navbar-collapse .nav-item .nav-link:active,
+  .navbar-collapse .nav-item .nav-link:focus
+  {
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 0.938em;
+    line-height: 1.3em;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .navbar-collapse .nav-item.active .nav-link:link,
+  .navbar-collapse .nav-item.active .nav-link:active,
+  .navbar-collapse .nav-item .nav-link:hover,
+  .navbar-collapse .nav-item .nav-link:focus,
+  .navbar-collapse .nav-item.active .nav-link{
+    color: #E50C7E;
+  }
+  .navbar-collapse .nav-item .nav-link,
+  .navbar-collapse .nav-item.active .nav-link:hover{
+    color: #FFFFFF;
+  }
+  .navbar-collapse .nav-item.active .nav-link.section_link{
+    font-size: 0.938rem;
+  }
+  .navbar-collapse .nav-item .language__selector__flag{
+    display: block;
+    clear: both;
+    padding-top: 0;
+    padding-bottom: 0.25em;
+  }
+  
+  .navbar .navbar-brand.brand__title{
+    border-bottom: 0;
+  }
+
+  .footer .footer__content{
+    font-size: 0.75em;
+    line-height: 3em;
   }
 }
