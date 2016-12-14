@@ -52,7 +52,7 @@
               </li>
               <li class="nav-item hidden-lg-up">
                 <ul class="social_links menu__social_links list-inline">
-                  <?php include('social_links'); ?>
+                  <?php include('social_links.php'); ?>
                 </ul>
               </li>
               <li class="nav-item hidden-lg-up">

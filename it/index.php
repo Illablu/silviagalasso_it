@@ -30,7 +30,7 @@ include('header.php');
 <div class="row">
   <div class="col-xs-12">
     <ul class="social_links homepage__social_links list-inline">
-      <?php include('social_links'); ?>
+      <?php include('social_links.php'); ?>
     </ul>
   </div>
 </div>

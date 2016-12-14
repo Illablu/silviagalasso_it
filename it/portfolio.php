@@ -10,7 +10,7 @@ include('header.php');
     </p>
   </div>
   <div class="col-xs-12 col-sm-3">
-    <?php include('social_links'); ?>
+    <?php include('social_links.php'); ?>
   </div>
 </div>
 <?php
