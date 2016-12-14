@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteBase /
+
+#Options +FollowSymLinks
+
+ReWriteRule ^it/chi$ it/chi.php [L] 
+ReWriteRule ^it/cosa$ it/cosa.php [L] 
+ReWriteRule ^it/contatti$ it/contatti.php [L] 
+ReWriteRule ^it/portfolio$ it/portfolio.php [L] 
+

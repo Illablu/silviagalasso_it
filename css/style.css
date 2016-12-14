@@ -166,6 +166,34 @@ a{
   margin-bottom: 0.25rem;
 }
 
+
+/* Sticky footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 240px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 240px;
+  line-height: 2.5rem; /* Vertically center the text there */
+}
+
+@media screen and (min-width: 540px){
+  body {
+    margin-bottom: 320px;
+  }
+  .footer {
+    height: 320px;
+  }
+}
+
 @media screen and (max-width: 992px){
   /*
   * Mobile mennu
