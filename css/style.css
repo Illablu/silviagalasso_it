@@ -31,7 +31,7 @@ a{
 .footer .footer__container--copyright .footer__content .text{
   font-size: 65%;
 }
-.content{
+.container.content{
   border-left: 0.20rem solid #E50C7E;
   margin-left: 1.563rem;
   padding-left: 1.375em;
@@ -63,7 +63,7 @@ a{
 .brand{}
 .navbar .navbar-brand.brand__title{
   font-family: Bebas-neue;
-  font-size: 2.125rem;
+  font-size: 2.425rem;
   line-height: 100%;
   white-space: nowrap;
   color: #E50C7E;
@@ -73,7 +73,7 @@ a{
 .brand__subtitle{
   font-family: 'Avenir LT Std 35 Light';
   white-space: nowrap;
-  font-size: 1.335rem;
+  font-size: 1.535rem;
   color: #FFFFFF;
   text-align: justify;
   display: block;
@@ -96,8 +96,8 @@ a{
   background: none;
 }
 .navbar .navbar-toggler svg{
-  width: 2.188rem;
-  height: 1.563rem;
+  width: 3rem;
+  height: 1.95rem;
 }
 .section_link{
   font-family: Bebas-neue; 
@@ -113,6 +113,7 @@ a{
   width: 1.7rem;
   height: 1.7rem;
 }
+.social_links.sidebar__social_links .list-inline-item:nth-child(odd) svg,
 .social_links.homepage__social_links .list-inline-item:nth-child(odd) svg,
 .social_links.menu__social_links .list-inline-item svg{
   color: #000000;
@@ -247,7 +248,9 @@ body {
   .navbar-collapse .nav-item.active .nav-link.section_link{
     font-size: 0.938rem;
   }
-
+  .social_links{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 993px){
   /* Sticky footer styles */

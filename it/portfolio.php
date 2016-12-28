@@ -10,7 +10,9 @@ include('header.php');
     </p>
   </div>
   <div class="col-xs-12 col-sm-3">
-    <?php include('social_links.php'); ?>
+    <ul class="social_links sidebar__social_links list-inline">
+      <?php include('social_links.php'); ?>
+    </ul>
   </div>
 </div>
 <?php

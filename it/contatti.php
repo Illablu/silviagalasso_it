@@ -18,7 +18,9 @@ include('header.php');
     I miei prezzi? Scarica qui il TARIFFARIO!
   </div>
   <div class="col-xs-12 hidden-lg-up">
-    <?php include('social_links.php'); ?>
+    <ul class="social_links sidebar__social_links list-inline">
+      <?php include('social_links.php'); ?>
+    </ul>
   </div>
 </div>
 <?php

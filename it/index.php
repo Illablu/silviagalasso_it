@@ -23,7 +23,7 @@ include('header.php');
     </ul>
     <p class="text-xs-right"><a class="section_link" href="#">portfolio</a></p>
   </div>
-  <div class="col-xs-12 col-md-3">
+  <div class="hidden-md-down">
     Libri che parlano di me... curiosità!
     &agrave;
   </div>
