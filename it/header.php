@@ -32,7 +32,9 @@
           </div>
         </div>
         <div class="col-xs-2 col-lg-5 text-xs-right">
-          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
+          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg><use xlink:href="/img/icons.svg#menu_burger"></use></svg>
+          </button>
           <div class="collapse navbar-toggleable-md navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
