@@ -25,6 +25,7 @@ include('header.php');
   </div>
   <div class="col-xs-12 col-md-3">
     Libri che parlano di me... curiosità!
+    &agrave;
   </div>
 </div>
 <div class="row">
