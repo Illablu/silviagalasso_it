@@ -28,7 +28,7 @@ include('header.php');
     <br />
   </div>
   <div class="hidden-md-down">
-    Libri che parlano di me... <a href="#" type="button" data-toggle="modal" data-target="#libri">curiosit&agrave;</a>!
+    Libri che parlano di me... <a href="#" data-toggle="modal" data-target="#libri">curiosit&agrave;</a>!
   </div>
 </div>
 <div class="row">
