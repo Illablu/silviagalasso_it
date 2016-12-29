@@ -11,7 +11,7 @@ include('header.php');
       nei social in cui sono presente!
     </p>
     <p>      
-      info@silviagalasso.it P.IVA 01785320936
+      info@silviagalasso.it <br />p.iva 01785320936
     </p>
   </div>
   <div class="col-md-4 hidden-md-down">
