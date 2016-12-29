@@ -7,7 +7,10 @@ include('header.php');
     <h3>Ciao!</h3>
     <p>
       Sono una grafica freelance con la passione della <strong>carta</strong> e dei <strong>libri</strong>, e un’innata propensione alla <strong>cura dei dettagli</strong>...<br />
-      Scopri di più su chi sono, cosa faccio e come contattarmi cliccando sul <a href="#">menù</a> in alto a destra!
+      Scopri di pi&ugrave; su chi sono, cosa faccio e come contattarmi cliccando sul 
+      <span class="hidden-md-down">men&ugrave;</span>
+      <a class="hidden-lg-up" href="#" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar">men&ugrave;</a>
+      in alto a destra!
     </p>
   </div>
 </div>
@@ -22,10 +25,10 @@ include('header.php');
       <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
     </ul>
     <p class="text-xs-right"><a class="section_link" href="#">portfolio</a></p>
+    <br />
   </div>
   <div class="hidden-md-down">
-    Libri che parlano di me... curiosità!
-    &agrave;
+    Libri che parlano di me... <a href="#" type="button" data-toggle="modal" data-target="#libri">curiosit&agrave;</a>!
   </div>
 </div>
 <div class="row">

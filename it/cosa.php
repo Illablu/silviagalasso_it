@@ -9,12 +9,12 @@ include('header.php');
       Principalmente di impaginare testi destinati alla stampa (visualizza elenco).
       Ma anche di grafica pubblicitaria, immagini coordinate, branding e rebranding, creazione di loghi, fotoritocco, realizzazione di immagini vettoriali, correzione bozze e revisione testi!<br />
       Il principio che mi guida è:<br />
-      “che sia bello, pulito, semplice, efficace, preciso e corretto”. <br />
+      “<strong>che sia bello, pulito, semplice, efficace, preciso e corretto</strong>”. <br />
       Prendo in prestito le parole di due personaggi importanti e noti:<br />
-      “If I cannot do great things, I can do small things in a great way” —- Martin Luther King Jr<br />
-      ”I want everything we do to be beautiful [...] I want to make beautiful things, even if nobody cares” —- Saul Bass<br />
+      “If I cannot do great things, I can do small things <strong>in a great way</strong>” —- Martin Luther King Jr<br />
+      ”I want everything we do to be <strong>beautiful</strong> [...] <strong>I want to make beautiful things</strong>, even if nobody cares” —- Saul Bass<br />
       A differenza di Saul Bass, tuttavia, a me importa (e sono certa che in realtà importasse anche a lui!) che il cliente comprenda il mio lavoro e ne risulti soddisfatto!<br />
-      La parola-chiave è: sinergia.
+      La parola-chiave è: <strong>sinergia</strong>.
     </p>
   </div>
   <div class="col-md-4 hidden-md-down">

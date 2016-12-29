@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="/img/favicon.png">
 
   <title>Silvia Galasso - grafica editoriale</title>
 
@@ -26,7 +26,7 @@
       <div class="container header__content">
         <div class="col-xs-10 col-lg-7">
           <div class="brand">
-            <a class="navbar-brand brand__title" href="#">Silvia Galasso</a>
+            <a class="navbar-brand brand__title" href="/">Silvia Galasso</a>
             <span class="brand__sidetitle clearfix hidden-md-down">grafica editoriale</span>
             <span class="brand__subtitle clearfix hidden-lg-up">grafica editoriale</span>
           </div>
