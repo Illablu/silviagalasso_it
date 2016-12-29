@@ -74,6 +74,7 @@
         switch ($page) {
             case 'chi':
                 $header_url = 'banner_header_typography.jpg';
+                $mobile_header_url = 'banner_header_typography_mobile.jpg';
                 break;
             case 'cosa':
                 $header_url = 'banner_header_brand.jpg';
@@ -88,7 +89,10 @@
         }
         if ($header_url){ ?>
           <div class="banner homepage__header_banner banner--header">
-            <img src="/img/<?php echo $header_url ?>" class="img-fluid banner__image" alt="">
+            <img src="/img/<?php echo $header_url ?>" class="img-fluid banner__image <?php if ($mobile_header_url){ echo 'hidden-sm-down'; } ?>" alt="Silvia Galasso Typography">
+            <?php if ($mobile_header_url){ ?>
+              <img src="/img/<?php echo $mobile_header_url ?>" class="img-fluid banner__image banner__image_mobile hidden-md-up" alt="Silvia Galasso Typography">
+            <?php } ?>
           </div>
         <?php }
       ?>
