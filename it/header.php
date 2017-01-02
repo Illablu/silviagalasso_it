@@ -24,18 +24,18 @@
   <header class="header">
     <nav class="navbar navbar-dark bg-faded header__navbar">
       <div class="container header__content">
-        <div class="col-xs-10 col-lg-7">
+        <div class="col-xs-10">
           <div class="brand">
             <a class="navbar-brand brand__title" href="/">Silvia Galasso</a>
             <span class="brand__sidetitle clearfix hidden-md-down">grafica editoriale</span>
             <span class="brand__subtitle clearfix hidden-lg-up">grafica editoriale</span>
           </div>
         </div>
-        <div class="col-xs-2 col-lg-5 text-xs-right">
-          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="col-xs-2 text-xs-right">
+          <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <svg><use xlink:href="/img/icons.svg#menu_burger"></use></svg>
           </button>
-          <div class="collapse navbar-toggleable-md navbar-collapse">
+          <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
                 <a class="nav-link" href="chi">Chi <span class="sr-only">(current)</span></a>
@@ -52,17 +52,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
               </li>
-              <li class="nav-item hidden-lg-up">
+              <li class="nav-item">
                 <ul class="social_links menu__social_links list-inline">
                   <?php include('social_links.php'); ?>
                 </ul>
               </li>
-              <li class="nav-item hidden-lg-up">
-                <a class="nav-link section_link" href="#">English version</a>
-              </li>
-              <li class="nav-item hidden-md-down language__selector">
-                <a class="nav-link language__selector__flag"><img src="/img/flag_italy.png" alt=""></a>
-                <a class="nav-link language__selector__flag" href="#"><img src="/img/flag_uk.png" alt=""></a>
+              <li class="nav-item">
+                <a class="nav-link section_link language__selector" href="#">
+                  <img class="language__selector__flag" src="/img/flag_uk.png" alt="">
+                  <span>English version</span>
+                </a>
               </li>
             </ul>
           </div>

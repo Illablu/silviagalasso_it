@@ -14,9 +14,7 @@ include('header.php');
       info@silviagalasso.it <br />p.iva 01785320936
     </p>
   </div>
-  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar__underlined">
-    I miei prezzi? Scarica qui il TARIFFARIO!
-  </div>
+  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar"></div>
   <div class="col-xs-12 hidden-lg-up">
     <ul class="social_links sidebar__social_links list-inline">
       <?php include('social_links.php'); ?>

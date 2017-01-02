@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6{
   font-family: Bebas-neue;
   color: #E50C7E;
 }
-a, a:visited, a:active{
+a, a:visited, a:active, a:focus, a:link, a:hover{
   color: #E50C7E;
 }
 strong{
@@ -22,7 +22,9 @@ span.highlight.strong{
 span.publisher{
   color: #7f7f7f;
 }
-
+p.no_breakline{
+  margin-bottom: 0;
+}
 /* Custom bootstrap modals styles*/
 .modal-header, .modal-content{
   padding:1em;
@@ -45,10 +47,10 @@ span.publisher{
   margin-bottom: 2em;
 }
 .header .header__navbar{
-  background-color: #1E1E1C;
+  background-color: #000000;
 }
 .footer{
-  background-color: #1E1E1C;
+  background-color: #000000;
 }
 .footer .footer__content{
   text-align: center;
@@ -91,6 +93,8 @@ span.publisher{
 .brand{}
 .navbar {
   border-radius: 0 !important;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 .navbar .navbar-brand.brand__title{
   font-family: Bebas-neue;
@@ -137,8 +141,6 @@ span.publisher{
   text-decoration: underline;
 }
 
-ul.sidebar_list__arrow_bullet{
-}
 ul.sidebar_list__arrow_bullet li:before{
   content: "»";
   padding-right: 5px;
@@ -195,6 +197,72 @@ ul.sidebar_list__arrow_bullet li:before{
   margin-bottom: 0.25rem;
 }
 
+/*
+* Main mennu
+* --------------------------------------------------
+*/
+.navbar-collapse {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  width: 50%;
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.navbar-collapse .nav-item{
+  background-color: #FFFFFF;
+}
+.navbar-collapse .navbar-nav{
+  padding-top: 1.25rem;
+}
+.navbar-collapse .nav-item .nav-link,
+.navbar-collapse .nav-item .nav-link:link,
+.navbar-collapse .nav-item .nav-link:active,
+.navbar-collapse .nav-item .nav-link:focus
+{
+  color: #1D1D1B;
+  font-family: Bebas-neue;
+  font-size: 1.25rem;
+  line-height: 168%;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 1.188em;
+}
+.navbar-collapse .nav-item.active .nav-link:link,
+.navbar-collapse .nav-item.active .nav-link:active,
+.navbar-collapse .nav-item .nav-link:hover,
+.navbar-collapse .nav-item .nav-link:focus,
+.navbar-collapse .nav-item.active .nav-link{
+  color: #E50C7E;
+}
+.navbar-collapse .nav-item .nav-link,
+.navbar-collapse .nav-item.active .nav-link:hover{
+  color: #1D1D1B;
+}
+.navbar-collapse .nav-item.active .nav-link.section_link{
+  font-size: 0.938rem;
+}
+.navbar-collapse .nav-item .section_link.language__selector{
+  text-decoration: none;
+}
+.navbar-collapse .nav-item .section_link.language__selector span{
+  text-decoration: underline;
+  font-family: inherit;
+}
+.navbar-collapse .nav-item .language__selector__flag{
+  margin-right: 10px;
+}
+.navbar-collapse .nav-item .nav-link svg{
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+
 /* Sticky footer styles */
 html {
   position: relative;
@@ -214,55 +282,6 @@ body {
 }
 
 @media screen and (max-width: 992px){
-  /*
-  * Mobile mennu
-  * --------------------------------------------------
-  */
-  .navbar-collapse {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 10000;
-    width: 50%;
-    height: 100%;
-    background-color: #FFFFFF;
-     overflow-y:scroll;
-      overflow-x:hidden;
-  }
-
-  .navbar-collapse .nav-item{
-    background-color: #FFFFFF;
-  }
-  .navbar-collapse .navbar-nav{
-    padding-top: 1.25rem;
-  }
-  .navbar-collapse .nav-item .nav-link,
-  .navbar-collapse .nav-item .nav-link:link,
-  .navbar-collapse .nav-item .nav-link:active,
-  .navbar-collapse .nav-item .nav-link:focus
-  {
-    color: #1D1D1B;
-    font-family: Bebas-neue;
-    font-size: 1.25rem;
-    line-height: 168%;
-    text-align: right;
-    text-transform: uppercase;
-    padding-right: 1.188em;
-  }
-  .navbar-collapse .nav-item.active .nav-link:link,
-  .navbar-collapse .nav-item.active .nav-link:active,
-  .navbar-collapse .nav-item .nav-link:hover,
-  .navbar-collapse .nav-item .nav-link:focus,
-  .navbar-collapse .nav-item.active .nav-link{
-    color: #E50C7E;
-  }
-  .navbar-collapse .nav-item .nav-link,
-  .navbar-collapse .nav-item.active .nav-link:hover{
-    color: #1D1D1B;
-  }
-  .navbar-collapse .nav-item.active .nav-link.section_link{
-    font-size: 0.938rem;
-  }
   .social_links{
     text-align: center;
   }
@@ -303,50 +322,36 @@ body {
   }
 }
 @media screen and (min-width: 993px){
+  .footer .footer__container--copyright{
+    border-top: 0.35rem solid #FFFFFF;
+  }
+  .container.content{
+    border-left: 0.35rem solid #E50C7E;
+  }
+  .banner{
+    margin-top: 0.35rem;
+    border-top: 0.35rem solid #E50C7E;
+    border-bottom: 0.35rem solid #E50C7E;
+  }
+  .column_sidebar__underlined{
+    border-bottom: 0.35rem solid #E50C7E;
+  }
+
+  .navbar .navbar-brand.brand__title{
+    font-size: 3.5rem;
+    border-bottom: 0;
+  }
+  .brand__sidetitle{
+    font-size: 2.1rem;
+    margin-top: 0.3em;
+  }
+
   /*
   * Main mennu
   * --------------------------------------------------
   */
   .navbar-collapse .nav-item{
-    display: table-cell;
-    vertical-align: middle; 
     float: none;
-    padding-right: 1.25rem;
-  }
-  .navbar-collapse .nav-item .nav-link,
-  .navbar-collapse .nav-item .nav-link:link,
-  .navbar-collapse .nav-item .nav-link:active,
-  .navbar-collapse .nav-item .nav-link:focus
-  {
-    font-family: 'Avenir LT Std 35 Light';
-    font-size: 0.938em;
-    line-height: 1.3em;
-    text-align: right;
-    text-transform: uppercase;
-  }
-  .navbar-collapse .nav-item.active .nav-link:link,
-  .navbar-collapse .nav-item.active .nav-link:active,
-  .navbar-collapse .nav-item .nav-link:hover,
-  .navbar-collapse .nav-item .nav-link:focus,
-  .navbar-collapse .nav-item.active .nav-link{
-    color: #E50C7E;
-  }
-  .navbar-collapse .nav-item .nav-link,
-  .navbar-collapse .nav-item.active .nav-link:hover{
-    color: #FFFFFF;
-  }
-  .navbar-collapse .nav-item.active .nav-link.section_link{
-    font-size: 0.938rem;
-  }
-  .navbar-collapse .nav-item .language__selector__flag{
-    display: block;
-    clear: both;
-    padding-top: 0;
-    padding-bottom: 0.25em;
-  }
-  
-  .navbar .navbar-brand.brand__title{
-    border-bottom: 0;
   }
 
   .banner{
@@ -354,5 +359,14 @@ body {
   }
   .banner__image{
     max-height: inherit;
+  }
+}
+@media screen and (min-width: 1230px){
+  .banner{
+    max-height: initial;
+  }
+  .banner__image{
+    width: 100%;
+    max-height: initial;
   }
 }

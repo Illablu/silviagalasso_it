@@ -16,7 +16,7 @@ include('header.php');
       Che altro? Sono piuttosto abile nello scovare refusi e nel rendere onore alla grammatica e alla sintassi italiana!
     </p>
   </div>
-  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar">
+  <div class="col-md-4 hidden-md-down column_sidebar">
     <ul class="social_links sidebar__social_links list-inline">
       <?php include('social_links.php'); ?>
     </ul>
