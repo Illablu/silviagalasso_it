@@ -49,7 +49,7 @@
               <li class="nav-item <?php if ($page == 'portfolio'){ echo 'active'; } ?>">
                 <a class="nav-link" href="portfolio">Portfolio</a>
               </li>
-              <li class="nav-item hidden-lg-up">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Tariffario</a>
               </li>
               <li class="nav-item hidden-lg-up">

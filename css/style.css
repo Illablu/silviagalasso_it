@@ -83,17 +83,15 @@ span.publisher{
   text-align: center;
   max-height: 380px;
 }
-.banner--footer{
-  margin-top: 0;
-  border-top: 0.20rem solid #FFFFFF;
-  border-bottom: 0.20rem solid #FFFFFF;
-}
 .banner__image{
   min-width: 444px;
   margin:0 -100%;
   max-height: 240px;
 }
 .brand{}
+.navbar {
+  border-radius: 0 !important;
+}
 .navbar .navbar-brand.brand__title{
   font-family: Bebas-neue;
   font-size: 2.425rem;
@@ -204,24 +202,15 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 240px;
+  margin-bottom: 45px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 240px;
+  height: 45px;
   line-height: 2.5rem; /* Vertically center the text there */
-}
-
-@media screen and (min-width: 540px){
-  body {
-    margin-bottom: 320px;
-  }
-  .footer {
-    height: 320px;
-  }
 }
 
 @media screen and (max-width: 992px){
@@ -314,24 +303,6 @@ body {
   }
 }
 @media screen and (min-width: 993px){
-  /* Sticky footer styles */
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 2.5rem;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 2.5rem;
-    line-height: 2.5rem; /* Vertically center the text there */
-  }
-
   /*
   * Main mennu
   * --------------------------------------------------
@@ -378,10 +349,6 @@ body {
     border-bottom: 0;
   }
 
-  .footer .footer__content{
-    font-size: 0.75em;
-    line-height: 3em;
-  }
   .banner{
     max-height: 380px;
   }

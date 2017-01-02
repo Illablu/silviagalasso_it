@@ -4,39 +4,11 @@
   </div>
 
   <footer class="footer">
-    <div class="hidden-lg-up">
+    <div class="footer__container--copyright">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 footer__content">
-            <span class="text">impaginazione ~ grafica editoriale</span>
-          </div>
-        </div>
-      </div>
-      <div class="banner homepage__footer_banner banner--footer">
-        <img src="/img/banner_footer_homepage.jpg" class="img-fluid banner__image" alt="">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 footer__content">
-            <span class="text">correzione bozze ~ revisione testi</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer__container--copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 footer__content">
-              <span class="text">copyright 2016 © silviagalasso.it ~ p.iva 01785320936 ~ ©</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hidden-md-down">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 footer__content">
-            <span class="text">impaginazione ~ grafica editoriale ~ correzione bozze ~ revisione testi ~ copyright 2016 © silviagalasso.it ~ p.iva 01785320936 ~ ©</span>
+            <span class="text">copyright 2016 © silviagalasso.it ~ p.iva 01785320936 ~ ©</span>
           </div>
         </div>
       </div>
