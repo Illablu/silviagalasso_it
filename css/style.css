@@ -6,12 +6,23 @@ h1, h2, h3, h4, h5, h6{
   font-family: Bebas-neue;
   color: #E50C7E;
 }
-a{
+a, a:visited, a:active{
   color: #E50C7E;
 }
 strong{
   font-family: 'Avenir LT Std 95 Black';
 }
+span.highlight{
+  color: #E50C7E;
+}
+span.highlight.strong{
+  font-weight: bold;
+  font-family: 'Avenir LT Std 95 Black';
+}
+span.publisher{
+  color: #7f7f7f;
+}
+
 /* Custom bootstrap modals styles*/
 .modal-header, .modal-content{
   padding:1em;
@@ -126,6 +137,14 @@ strong{
   text-transform: uppercase;
   font-size: 1.25rem;
   text-decoration: underline;
+}
+
+ul.sidebar_list__arrow_bullet{
+}
+ul.sidebar_list__arrow_bullet li:before{
+  content: "»";
+  padding-right: 5px;
+  color: #E50C7E;
 }
 
 /* Social links */
@@ -260,6 +279,20 @@ body {
   }
 }
 @media screen and (min-width: 768px){
+  .column_sidebar{
+    position: absolute;
+    right: 0;
+    bottom: 2.1em;
+    padding-left:0;
+  }
+  .column_sidebar__underlined{
+    position: absolute;
+    right: 0;
+    bottom: 2.1em;
+    padding-left:0;
+    border-bottom: 0.20rem solid #E50C7E;
+  }
+
   /* Centered bootstrap modals*/
   .modal {
     text-align: center;

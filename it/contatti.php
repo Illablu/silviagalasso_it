@@ -3,7 +3,7 @@ $page = 'contatti';
 include('header.php');
 ?>
 <div class="row">
-  <div class="col-xs-12 col-md-8">
+  <div class="col-xs-12 col-md-7">
     <h3>Come contattarmi</h3>
     <p>
       Per informazioni o per ricevere un preventivo gratuito, contattami!<br />
@@ -14,7 +14,7 @@ include('header.php');
       info@silviagalasso.it <br />p.iva 01785320936
     </p>
   </div>
-  <div class="col-md-4 hidden-md-down">
+  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar__underlined">
     I miei prezzi? Scarica qui il TARIFFARIO!
   </div>
   <div class="col-xs-12 hidden-lg-up">

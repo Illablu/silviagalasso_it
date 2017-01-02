@@ -15,7 +15,7 @@ include('header.php');
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12 col-md-8">
+  <div class="col-xs-12 col-md-7">
     <ul class="homepage__portfolio list-inline">
       <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
       <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
@@ -24,14 +24,15 @@ include('header.php');
       <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
       <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
     </ul>
-    <p class="text-xs-right"><a class="section_link" href="#">portfolio</a></p>
-    <br />
+    <div class="hidden-md-up">
+      <p class="text-xs-right"><a class="section_link" href="#">portfolio</a></p>
+    </div>
   </div>
-  <div class="hidden-md-down">
+  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar__underlined">
     Libri che parlano di me... <a href="#" data-toggle="modal" data-target="#libri">curiosit&agrave;</a>!
   </div>
 </div>
-<div class="row">
+<div class="row hidden-md-up">
   <div class="col-xs-12">
     <ul class="social_links homepage__social_links list-inline">
       <?php include('social_links.php'); ?>

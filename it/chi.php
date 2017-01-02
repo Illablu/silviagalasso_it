@@ -3,7 +3,7 @@ $page = 'chi';
 include('header.php');
 ?>
 <div class="row">
-  <div class="col-xs-12 col-md-9">
+  <div class="col-xs-12 col-md-7">
     <h3>Chi</h3>
     <p>
       Sono una grafica freelance con base a Pordenone (Italia).<br />
@@ -16,7 +16,7 @@ include('header.php');
       Che altro? Sono piuttosto abile nello scovare refusi e nel rendere onore alla grammatica e alla sintassi italiana!
     </p>
   </div>
-  <div class="col-xs-12 col-md-3">
+  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar">
     <ul class="social_links sidebar__social_links list-inline">
       <?php include('social_links.php'); ?>
     </ul>

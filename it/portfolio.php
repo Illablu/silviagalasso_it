@@ -3,16 +3,14 @@ $page = 'portfolio';
 include('header.php');
 ?>
 <div class="row">
-  <div class="col-xs-12 col-sm-9">
+  <div class="col-xs-12 col-md-7">
     <h3>Portfolio</h3>
     <p>
       
     </p>
   </div>
-  <div class="col-xs-12 col-sm-3">
-    <ul class="social_links sidebar__social_links list-inline">
-      <?php include('social_links.php'); ?>
-    </ul>
+  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar">
+    <?php include('social_links.php'); ?>
   </div>
 </div>
 <?php
