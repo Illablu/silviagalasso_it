@@ -50,7 +50,7 @@
                 <a class="nav-link" href="portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tariffario</a>
+                <a class="nav-link" href="#"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
               </li>
               <li class="nav-item hidden-lg-up">
                 <ul class="social_links menu__social_links list-inline">
