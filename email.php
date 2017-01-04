@@ -8,7 +8,7 @@ require 'class.smtp.php';
 
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
@@ -25,33 +25,42 @@ require 'class.smtp.php';
         
         date_default_timezone_set('Etc/UTC');
 
-		$mail = new PHPMailer();
+        $mail = new PHPMailer();
 
-		$mail->IsSMTP();
-		$mail->CharSet = 'UTF-8';
+        $mail->IsSMTP();
+        $mail->CharSet = 'UTF-8';
 
-		$mail->Host       = $smtp_host;
-		$mail->SMTPDebug  = 0;
-		$mail->SMTPAuth   = true;
-		$mail->Port       = $smtp_post;
-		$mail->Username   = $smtp_user;
-		$mail->Password   = $smtp_password;
 
-		$mail->setFrom($email);
-		$mail->addAddress($recipient_email);
+        $mail->Host       = $smtp_host;
+        $mail->SMTPDebug  = 0;
+        $mail->SMTPAuth   = true;
+        $mail->SMTPSecure = 'tls' ;
+        $mail->Port       = $smtp_port;
+        $mail->Username   = $smtp_user;
+        $mail->Password   = $smtp_password;
 
-		$mail->isHTML(true);
+        $mail->setFrom($email);
+        $mail->addAddress($recipient_email);
 
-		$mail->Subject = $subject;
-		$mail->Body    = $email_content;
+        $mail->isHTML(true);
+
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
+
+        $mail->Subject = $subject;
+        $mail->Body    = $email_content;
 
         // Send the email.
        if ($mail->send()) {
            http_response_code(200);
         } else {
-           	http_response_code(500);
+            http_response_code(500);
         }
-
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);

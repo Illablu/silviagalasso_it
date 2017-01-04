@@ -169,7 +169,6 @@
             type: "POST",
             url: "/email.php",
             data: $(form).serialize(),
-            timeout: 3000,
             success: function() {
               $('.form fieldset').fadeOut(300, function(){
                 $('.form').validate().resetForm();
@@ -180,7 +179,8 @@
               });
               
             },
-            error: function() {
+            error: function (request, status, error) {
+              console.log(status);
               $('.form .feedback').html("<p class='submission-confirm error'>Qualcosa è andato storto, riprova.</p>").fadeIn(300).delay(10000).fadeOut(300);
             }
           });
