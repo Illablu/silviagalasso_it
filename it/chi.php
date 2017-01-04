@@ -3,7 +3,7 @@ $page = 'chi';
 include('header.php');
 ?>
 <div class="row">
-  <div class="col-xs-12 col-md-7">
+  <div class="col-xs-12">
     <h3>Chi</h3>
     <p>
       Sono una grafica freelance con base a Pordenone (Italia).<br />
@@ -15,8 +15,9 @@ include('header.php');
       Da ciò deriva l’unione di <strong>cultura</strong>, <strong>precisione</strong>, <strong>ordine</strong>, <strong>rigore</strong> e <strong>creativit&agrave;</strong>!<br />
       Che altro? Sono piuttosto abile nello scovare refusi e nel rendere onore alla grammatica e alla sintassi italiana!
     </p>
+    <p>&nbsp;</p>
   </div>
-  <div class="col-md-4 hidden-md-down column_sidebar">
+  <div class="col-xs-12 hidden-md-down align-center">
     <ul class="social_links sidebar__social_links list-inline">
       <?php include('social_links.php'); ?>
     </ul>
