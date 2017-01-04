@@ -355,7 +355,7 @@ body {
   }
 
   .banner{
-    max-height: 380px;
+    max-height: 300px;
   }
   .banner__image{
     max-height: inherit;
@@ -364,9 +364,9 @@ body {
 @media screen and (min-width: 1230px){
   .banner{
     max-height: initial;
+    background-color: #141414;
   }
   .banner__image{
-    width: 100%;
-    max-height: initial;
+    max-height: 300px;
   }
 }
