@@ -6,34 +6,15 @@ include('header.php');
   <div class="col-xs-12">
     <h3>Ciao!</h3>
     <p>
-      Sono una grafica freelance con la passione della <strong>carta</strong> e dei <strong>libri</strong>, e un’innata propensione alla <strong>cura dei dettagli</strong>...<br />
-      Scopri di pi&ugrave; su chi sono, cosa faccio e come contattarmi cliccando sul 
-      <span class="hidden-md-down">men&ugrave;</span>
-      <a class="hidden-lg-up" href="#" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar">men&ugrave;</a>
-      in alto a destra!
+      Sono una grafica freelance con la passione della carta e dei <a href="#" data-toggle="modal" data-target="#libri">libri</a>, e un’innata propensione alla cura dei dettagli...<br />
+      Scopri di pi&ugrave; su <a href="chi">chi</a> sono, <a href="cosa">cosa</a> faccio e come <a href="contatti">contattarmi</a>.<br />
+      E, se ne hai voglia, dai un'occhiata al mio <a href="portfolio">portfolio</a>!
     </p>
+    <p>&nbsp;</p>
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12 col-md-7">
-    <ul class="homepage__portfolio list-inline">
-      <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
-      <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
-      <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
-      <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
-      <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
-      <li class="list-inline-item"><img src="/portfolio/th_dummy.png" alt="" class="img-thumbnail"></li>
-    </ul>
-    <div class="hidden-md-up">
-      <p class="text-xs-right"><a class="section_link" href="#">portfolio</a></p>
-    </div>
-  </div>
-  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar__underlined">
-    Libri che parlano di me... <a href="#" data-toggle="modal" data-target="#libri">curiosit&agrave;</a>!
-  </div>
-</div>
-<div class="row hidden-md-up">
-  <div class="col-xs-12">
+  <div class="col-xs-12 align-center">
     <ul class="social_links homepage__social_links list-inline">
       <?php include('social_links.php'); ?>
     </ul>

@@ -7,8 +7,11 @@
     <div class="footer__container--copyright">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 footer__content">
-            <span class="text">copyright 2016 © silviagalasso.it ~ p.iva 01785320936 ~ ©</span>
+          <div class="col-xs-12 footer__content hidden-sm-down">
+            <span class="text">copyright 2017 © silviagalasso.it | info@silviagalasso.it | p.iva 01785320936 | ©</span>
+          </div>
+          <div class="col-xs-12 footer__content hidden-sm-up">
+            <span class="text">copyright 2017 © silviagalasso.it <br /> info@silviagalasso.it | p.iva 01785320936 | ©</span>
           </div>
         </div>
       </div>
