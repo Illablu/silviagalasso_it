@@ -35,7 +35,7 @@
     </div>
   </div>
 
-<div id="company_profile" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="company_profile">
+  <div id="company_profile" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="company_profile">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -53,6 +53,45 @@
             i concetti espressi, attirando la sua attenzione ed esercitando una forte ed efficace impressione comunicativa.</li>
             <li>l'obiettivo è catturare l’attenzione del lettore o del potenziale cliente, stimolarne la curiosit&agrave;, impressionarlo positivamente, conquistarlo.</li>
           </ul>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact_form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact_form">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4>Contattami</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form">
+            <fieldset>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" id="email" placeholder="" required class="form-control" type="email">
+              </div>
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input id="name" name="name" placeholder="" required class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="message">Messaggio</label>
+                <textarea placeholder="" class="form-control" required name="message" id="message"></textarea>
+              </div>
+              <div class="form-group">
+                <label>&nbsp;</label>
+                <div class="g-recaptcha" data-sitekey="6Ldp3xgTAAAAAMc1B0aqGVnLAco8unSmEDqoC8MZ"></div>
+                <input type="hidden" class="my_cpa hiddencode required" name="hiddencode" id="hiddencode">  
+              </div>
+              <div class="form-group">
+                <label class="col-md-4 control-label">&nbsp;</label>
+                <input type="submit" value="Invia" />
+              </div>
+            </fieldset>
+            <div class="feedback"></div>
+          </form>
         </div>
       </div>
     </div>
@@ -101,12 +140,53 @@
   <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <script src='/js/jquery-validate.min.js'></script>
+  <script src='/js/jquery-validate.messages_it.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="/js/menu.js" type="text/javascript"></script>
   <script src="/js/svg4everybody.min.js"></script>
   <script>
     svg4everybody();
     $( document ).ready(function() {
       $('.popover').popover();
+
+      $('.form').validate({
+        lang: 'it',
+        ignore: ":hidden:not(.my_cpa)",
+        rules:{
+          hiddencode: {
+             required: function() {
+                 if(grecaptcha.getResponse() == '') {
+                     return true;
+                 } else {
+                     return false;
+                 }
+             }
+          }
+        },
+        submitHandler: function(form) {
+          $.ajax({
+            type: "POST",
+            url: "/email.php",
+            data: $(form).serialize(),
+            timeout: 3000,
+            success: function() {
+              $('.form fieldset').fadeOut(300, function(){
+                $('.form').validate().resetForm();
+                $('.form')[0].reset();
+                grecaptcha.reset();
+                $('.form fieldset').delay(10000).fadeIn(300);
+                $('.form .feedback').html("<p class='submission-confirm success'>Grazie! Il tuo messaggio è stato inviato.</p>").fadeIn(300).delay(10000).fadeOut(300);
+              });
+              
+            },
+            error: function() {
+              $('.form .feedback').html("<p class='submission-confirm error'>Qualcosa è andato storto, riprova.</p>").fadeIn(300).delay(10000).fadeOut(300);
+            }
+          });
+          return false;
+        }
+      });
     });
   </script>
   </body>
