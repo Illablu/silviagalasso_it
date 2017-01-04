@@ -21,6 +21,13 @@
    
 </head>
 <body class="homepage">
+  <div class="container-bg-line-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 container-bg-line"></div>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <nav class="navbar navbar-dark bg-faded header__navbar">
       <div class="container header__content">
@@ -68,7 +75,7 @@
         </div>
       </div>
     </nav>
-    
+    <div class="container-white-bg line"></div>
       <?php
         switch ($page) {
             case 'chi':
@@ -97,6 +104,8 @@
       ?>
     
   </header>
+
+  <div class="container-white-bg space"></div>
 
   <div class="container">
     <div class="row">
