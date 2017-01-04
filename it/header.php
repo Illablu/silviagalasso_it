@@ -13,7 +13,7 @@
   <title>Silvia Galasso - grafica editoriale</title>
 
   <script src="https://use.typekit.net/ucj3pba.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>try{Typekit.load({ async: false });}catch(e){}</script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css" rel="stylesheet" type="text/css">
