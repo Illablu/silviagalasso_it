@@ -63,6 +63,7 @@ p.no_breakline{
 }
 .footer .footer__content .text{
   color: #FFFFFF;
+  font-family: "Avenir LT Std 35 Light";
 }
 .footer .footer__container--copyright{
   border-top: 0;
@@ -135,6 +136,9 @@ p.no_breakline{
   border: 0;
   background: none;
 }
+.navbar .navbar-toggler:hover{
+  cursor: pointer;
+}
 .navbar .navbar-toggler svg{
   width: 3rem;
   height: 1.95rem;
@@ -190,7 +194,8 @@ ul.sidebar_list__arrow_bullet li:before{
 .social_links.menu__social_links .list-inline-item svg{
   color: #000000;
 }
-.social_links.homepage__social_links .list-inline-item{
+.social_links.homepage__social_links .list-inline-item,
+.social_links.sidebar__social_links .list-inline-item{
   margin-right: 25px;
 }
 .social_links.menu__social_links .social_link{
