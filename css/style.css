@@ -289,7 +289,6 @@ ul.sidebar_list__arrow_bullet li:before{
   text-decoration: none;
 }
 .navbar-collapse .nav-item .section_link.language__selector span{
-  text-decoration: underline;
   font-family: inherit;
 }
 .navbar-collapse .nav-item .language__selector__flag{

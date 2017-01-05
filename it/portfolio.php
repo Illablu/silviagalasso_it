@@ -8,9 +8,12 @@ include('header.php');
     <p>
       
     </p>
+	<p>&nbsp;</p>
   </div>
-  <div class="col-md-4 col-md-push-1 hidden-md-down column_sidebar">
-    <?php include('social_links.php'); ?>
+  <div class="col-xs-12 align-center">
+    <ul class="social_links sidebar__social_links list-inline">
+      <?php include('social_links.php'); ?>
+    </ul>
   </div>
 </div>
 <?php

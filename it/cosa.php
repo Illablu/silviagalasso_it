@@ -48,8 +48,9 @@ include('header.php');
       A differenza di Saul Bass, tuttavia, a me importa (e sono certa che in realtà importasse anche a lui!) che il cliente comprenda il mio lavoro e ne risulti soddisfatto!<br />
       La parola-chiave è: <strong>sinergia</strong>.
     </p>
+    <p>&nbsp;</p>
   </div>
-  <div class="col-xs-12 hidden-lg-up">
+  <div class="col-xs-12 align-center">
     <ul class="social_links sidebar__social_links list-inline">
       <?php include('social_links.php'); ?>
     </ul>

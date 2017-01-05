@@ -17,7 +17,7 @@ include('header.php');
     </p>
     <p>&nbsp;</p>
   </div>
-  <div class="col-xs-12 hidden-md-down align-center">
+  <div class="col-xs-12 align-center">
     <ul class="social_links sidebar__social_links list-inline">
       <?php include('social_links.php'); ?>
     </ul>

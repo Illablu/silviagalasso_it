@@ -57,12 +57,7 @@
                 <a class="nav-link" href="portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
-              </li>
-              <li class="nav-item">
-                <ul class="social_links menu__social_links list-inline">
-                  <?php include('social_links.php'); ?>
-                </ul>
+                <a class="nav-link" href="/files/il_mio_tariffario.pdf" target="_blank"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link section_link language__selector" href="#">
