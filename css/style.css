@@ -312,15 +312,15 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 90px;
-  line-height: 2.5rem; /* Vertically center the text there */
+  height: 50px;
+  line-height: 1.4rem; /* Vertically center the text there */
 }
 
 
@@ -343,6 +343,7 @@ body {
   .footer {
     bottom: 0;
     height: 45px;
+    line-height: 2.5rem;
   }
 }
 @media screen and (min-width: 768px){
