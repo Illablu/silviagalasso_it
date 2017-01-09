@@ -57,7 +57,7 @@
                 <a class="nav-link" href="portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/files/il_mio_tariffario.pdf" target="_blank"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
+                <a class="nav-link" href="/files/sg_tariffario_2017.pdf" target="_blank"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link section_link language__selector" href="#">
