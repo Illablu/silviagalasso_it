@@ -10,7 +10,7 @@
   <meta name="author" content="">
   <link rel="icon" href="/img/favicon.png">
 
-  <title>Silvia Galasso - grafica editoriale</title>
+  <title>Silvia Galasso - editorial design</title>
 
   <script src="https://use.typekit.net/ucj3pba.js"></script>
   <script>try{Typekit.load({ async: false });}catch(e){}</script>
@@ -36,9 +36,9 @@
       <div class="container header__content">
         <div class="col-xs-10">
           <div class="brand">
-            <a class="navbar-brand brand__title" href="/">Silvia Galasso</a>
-            <span class="brand__sidetitle clearfix hidden-md-down">grafica editoriale</span>
-            <span class="brand__subtitle clearfix hidden-lg-up">grafica editoriale</span>
+            <a class="navbar-brand brand__title" href="/en">Silvia Galasso</a>
+            <span class="brand__sidetitle clearfix hidden-md-down">editorial design</span>
+            <span class="brand__subtitle clearfix hidden-lg-up">editorial design</span>
           </div>
         </div>
         <div class="col-xs-2 text-xs-right">
@@ -51,24 +51,24 @@
                 <a class="nav-link" href="chi">Homepage</a>
               </li>
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
-                <a class="nav-link" href="chi">Chi</a>
+                <a class="nav-link" href="who">Who</a>
               </li>
               <li class="nav-item <?php if ($page == 'cosa'){ echo 'active'; } ?>">
-                <a class="nav-link" href="cosa">Cosa</a>
+                <a class="nav-link" href="what-i-do">What I do</a>
               </li>
               <li class="nav-item <?php if ($page == 'contatti'){ echo 'active'; } ?>">
-                <a class="nav-link" href="contatti">Contatti</a>
+                <a class="nav-link" href="contact-me">Contact me</a>
               </li>
               <li class="nav-item <?php if ($page == 'portfolio'){ echo 'active'; } ?>">
                 <a class="nav-link" href="portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/files/sg_tariffario_2017.pdf" target="_blank"><svg><use xlink:href="/img/social-icons.svg#download"></use></svg>Tariffario</a>
+                <a class="nav-link" href="/files/sg_tariffario_2017.pdf" target="_blank"><svg><use xlink:href="/img/social-icons.svg#download"></use></svg>Price list</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link section_link language__selector" href="/en">
-                  <img class="language__selector__flag" src="/img/flag_uk.png" alt="">
-                  <span>English version</span>
+                <a class="nav-link section_link language__selector" href="/it">
+                  <img class="language__selector__flag" src="/img/flag_italy.png" alt="">
+                  <span>Versione italiana</span>
                 </a>
               </li>
             </ul>
