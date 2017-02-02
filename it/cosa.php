@@ -6,7 +6,7 @@ include('header.php');
   <div class="col-xs-12">
     <h3>Di cosa mi occupo?</h3>
     <p class="no_breakline">
-      Principalmente di impaginare testi destinati alla stampa (<a data-toggle="collapse" href="#elenco_servizi" aria-expanded="false" aria-controls="elenco_servizi">visualizza elenco</a>). <br />
+      Principalmente di impaginare testi destinati alla stampa. Ma anche di grafica pubblicitaria, immagini coordinate, branding e rebranding, creazione di loghi, fotoritocco, realizzazione di immagini vettoriali, correzione bozze e revisione testi! (<a data-toggle="collapse" href="#elenco_servizi" aria-expanded="false" aria-controls="elenco_servizi">visualizza elenco</a>).
     </p>
     <div class="collapse" id="elenco_servizi">
       <div class="row">
@@ -39,12 +39,11 @@ include('header.php');
       </div>
     </div>
     <p>
-      Ma anche di grafica pubblicitaria, immagini coordinate, branding e rebranding, creazione di loghi, fotoritocco, realizzazione di immagini vettoriali, correzione bozze e revisione testi!<br />
-      Il principio che mi guida è:<br />
+      Il principio che mi guida è:
       “<strong>che sia bello, pulito, semplice, efficace, preciso e corretto</strong>”. <br />
       Prendo in prestito le parole di due personaggi importanti e noti:<br />
-      “If I cannot do great things, I can do small things <strong>in a great way</strong>” —- Martin Luther King Jr<br />
-      ”I want everything we do to be <strong>beautiful</strong> [...] <strong>I want to make beautiful things</strong>, even if nobody cares” —- Saul Bass<br />
+      “If I cannot do great things, I can do small things <strong>in a great way</strong>” <span class="publisher">—Martin Luther King Jr</span><br />
+      ”I want everything we do to be <strong>beautiful</strong> [...] <strong>I want to make beautiful things</strong>, even if nobody cares” <span class="publisher">—Saul Bass</span><br />
       A differenza di Saul Bass, tuttavia, a me importa (e sono certa che in realtà importasse anche a lui!) che il cliente comprenda il mio lavoro e ne risulti soddisfatto!<br />
       La parola-chiave è: <strong>sinergia</strong>.
     </p>

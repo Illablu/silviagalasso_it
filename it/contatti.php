@@ -7,11 +7,8 @@ include('header.php');
     <h3>Come contattarmi</h3>
     <p>
       Per informazioni o per ricevere un preventivo gratuito, contattami!<br />
-      Puoi scrivermi un’e-mail, compilare il <a href="#" data-toggle="modal" data-target="#contact_form">form online</a> oppure cercarmi
+      Puoi scrivermi un’<a href="mailto:info@silviagalasso.it">e-mail</a>, compilare il <a href="#" data-toggle="modal" data-target="#contact_form">form online</a> oppure cercarmi
       nei social in cui sono presente!
-    </p>
-    <p>      
-      info@silviagalasso.it <br />p.iva 01785320936
     </p>
     <p>&nbsp;</p>
   </div>

@@ -47,8 +47,11 @@
           </button>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
+              <li class="nav-item <?php if ($page == 'index'){ echo 'active'; } ?>">
+                <a class="nav-link" href="chi">Homepage</a>
+              </li>
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
-                <a class="nav-link" href="chi">Chi <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="chi">Chi</a>
               </li>
               <li class="nav-item <?php if ($page == 'cosa'){ echo 'active'; } ?>">
                 <a class="nav-link" href="cosa">Cosa</a>

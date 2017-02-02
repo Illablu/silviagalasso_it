@@ -9,7 +9,7 @@ include('header.php');
       Sono una grafica freelance con base a Pordenone (Italia).<br />
       Mi occupo principalmente di grafica editoriale, cio&egrave; impaginazione di testi destinati alla stampa: tesi, tesine, libri, riviste, brochure, dépliant, volantini, biglietti da visita, carta intestata... eccetera.<br />
       Possiedo anche una certa abilità nel fotoritocco e nell’elaborazione di immagini vettoriali.<br />
-      Posso quindi aiutarti a realizzare un logo e a elaborare la tua <a href="#" data-toggle="modal" data-target="#immagine_coordinata">immagine coordinata</a>, oppure a valorizzare la tua azienda mediante lo studio e la realizzazione di un <a href="#" data-toggle="modal" data-target="#company_profile" >company profile</a>.<br />
+      Posso quindi aiutarti a realizzare un logo e a elaborare la tua <a href="#" data-toggle="modal" data-target="#immagine_coordinata">immagine coordinata</a>, oppure a valorizzare la tua azienda mediante lo studio e la realizzazione di un <a href="#" data-toggle="modal" data-target="#company_profile" >profilo aziendale</a>.<br />
       La mia formazione? Sono una classicista.<br />
       Inizio come ‘filologa classica’, proseguo come ‘archeologa’ e infine approdo al ‘graphic design’.<br />
       Da ciò deriva l’unione di <strong>cultura</strong>, <strong>precisione</strong>, <strong>ordine</strong>, <strong>rigore</strong> e <strong>creativit&agrave;</strong>!<br />

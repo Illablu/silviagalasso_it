@@ -149,13 +149,20 @@ p.no_breakline{
   font-size: 1.25rem;
   text-decoration: underline;
 }
-
+.content a{
+  text-decoration: underline; 
+}
 ul.sidebar_list__arrow_bullet li:before{
   content: "»";
   padding-right: 5px;
   color: #E50C7E;
 }
-
+.modal-body ul li{
+  margin-bottom:0.7em;
+}
+.form-group.form-submit{
+  text-align: right;
+}
 /* BG magenta line */
 .container-bg-line-container{
   z-index: -1;

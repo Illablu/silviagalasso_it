@@ -40,7 +40,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4>company profile</h4>
+          <h4>profilo aziendale</h4>
         </div>
         <div class="modal-body">
           <ul>
@@ -85,9 +85,9 @@
                 <div class="g-recaptcha" data-sitekey="6Ldp3xgTAAAAAMc1B0aqGVnLAco8unSmEDqoC8MZ"></div>
                 <input type="hidden" class="my_cpa hiddencode required" name="hiddencode" id="hiddencode">  
               </div>
-              <div class="form-group">
-                <label class="col-md-4 control-label">&nbsp;</label>
-                <input type="submit" value="Invia" />
+              <div class="form-group form-submit">
+                <label class="control-label">&nbsp;</label>
+                <input type="submit" value="Invia" class="btn btn-default" />
               </div>
             </fieldset>
             <div class="feedback"></div>
@@ -103,7 +103,7 @@
         <div class="modal-header">
           <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4>libri, che passione!</h4>
-          <p>amo la carta e amo i <span class="highlight strong">libri</span>, alcuni pi&ugrave; di altri... ve ne elenco qualcuno tra i miei <span class="highlight strong">preferiti</span>! (rigorosamente in ordine sparso)</p>
+          <p>amo la carta e amo i <span class="highlight">libri</span>, alcuni pi&ugrave; di altri... ve ne elenco qualcuno tra i miei <span class="highlight">preferiti</span>! (rigorosamente in ordine sparso)</p>
         </div>
         <div class="modal-body">
           <ul>
