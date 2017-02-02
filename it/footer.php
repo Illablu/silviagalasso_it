@@ -145,10 +145,20 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="/js/menu.js" type="text/javascript"></script>
   <script src="/js/svg4everybody.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery.swipebox.js"></script>
   <script>
     svg4everybody();
     $( document ).ready(function() {
       $('.popover').popover();
+
+      $('.portfolio').owlCarousel({
+        singleItem: true,
+        autoHeight : true,
+        transitionStyle : "backSlide"
+      });
+
+      $(document).swipebox({ selector: '.swipebox' });
 
       $('.form').validate({
         lang: 'it',

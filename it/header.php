@@ -5,7 +5,7 @@
   <meta name="robots" content="noindex">
   <meta name="googlebot" content="noindex">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="/img/favicon.png">
@@ -18,9 +18,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/avenir.css" rel="stylesheet" type="text/css">
-   
+  <link rel='stylesheet' type='text/css' href="/css/owl.carousel.css" />
+  <link rel='stylesheet' type='text/css' href="/css/owl.theme.css" />
+  <link rel="stylesheet" type='text/css' href="/css/owl.transitions.css">
+  <link rel="stylesheet" href="/css/swipebox.min.css">
 </head>
-<body class="homepage">
+<body class="page-<?php echo $page; ?>">
   <div class="container-bg-line-container">
     <div class="container">
       <div class="row">
