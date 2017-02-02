@@ -43,7 +43,7 @@
         </div>
         <div class="col-xs-2 text-xs-right">
           <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target=".navbar-collapse" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <svg><use xlink:href="/img/icons.svg#menu_burger"></use></svg>
+            <svg><use xlink:href="/img/social-icons.svg#menu_burger"></use></svg>
           </button>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -60,7 +60,7 @@
                 <a class="nav-link" href="portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/files/sg_tariffario_2017.pdf" target="_blank"><svg><use xlink:href="/img/icons.svg#download"></use></svg>Tariffario</a>
+                <a class="nav-link" href="/files/sg_tariffario_2017.pdf" target="_blank"><svg><use xlink:href="/img/social-icons.svg#download"></use></svg>Tariffario</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link section_link language__selector" href="#">
