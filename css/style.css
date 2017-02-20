@@ -152,6 +152,9 @@ p.no_breakline{
 .content a{
   text-decoration: underline; 
 }
+ul.list-inline.sidebar_list__arrow_bullet{
+  margin-top:1em;
+}
 ul.sidebar_list__arrow_bullet li:before{
   content: "»";
   padding-right: 5px;
