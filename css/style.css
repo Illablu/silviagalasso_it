@@ -478,3 +478,8 @@ body {
     max-height: 300px;
   }
 }
+
+/* Patch for slideshow close button interacting with menu */
+#swipebox-close{
+  left:0;
+}
