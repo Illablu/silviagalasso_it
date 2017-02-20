@@ -152,7 +152,7 @@
       $('.portfolio').owlCarousel({
         singleItem: true,
         autoHeight : true,
-        transitionStyle : "backSlide"
+        transitionStyle : "fade"
       });
 
       $(document).swipebox({ selector: '.swipebox' });

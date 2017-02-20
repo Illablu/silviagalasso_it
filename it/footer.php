@@ -155,7 +155,8 @@
       $('.portfolio').owlCarousel({
         singleItem: true,
         autoHeight : true,
-        transitionStyle : "backSlide"
+        autoPlay: true,
+        transitionStyle : "fade"
       });
 
       $(document).swipebox({ selector: '.swipebox' });
