@@ -161,7 +161,7 @@
 
       $(document).swipebox({ 
         selector: '.swipebox',
-        hideBarsDelay: 20000
+        hideBarsDelay: 7000
       });
 
       $('.form').validate({
