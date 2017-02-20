@@ -1,4 +1,36 @@
-<!DOCTYPE html>
+<?php
+switch ($page) {
+    case 'chi':
+        $title = 'CHI - Silvia Galasso | grafica editoriale';
+        $meta = 'grafica editoriale, graphic design, impaginazione, indesign, photoshop, illustrator, freelance, tipografia, carta stampata, pubblicità, comunicazione, correzione bozze, refusi, grammatica, sintassi, classicista, lettere, archeologia, cultura, precisione, rigore, creatività, ellen lupton';
+        $desc = 'Silvia Galasso | grafica editoriale: grafica freelance; laureata in lettere classiche e archeologia; si occupa principalmente di impaginare libri, ma anche di grafica pubblicitaria e correzione bozze. competenze: grafica editoriale, graphic design, indesign, illustrator, photoshop.';
+        $header_url = 'banner_header_typography.jpg';
+        $mobile_header_url = 'banner_header_typography_mobile.jpg';
+        break;
+    case 'cosa':
+        $title = 'COSA - Silvia Galasso | grafica editoriale';
+        $meta = 'grafica editoriale, graphic design, grafica pubblicitaria, impaginazione, layout, indesign, photoshop, illustrator, freelance, tipografia, carta stampata, pubblicità, comunicazione, brand, immagine coordinata, libro, rivista, catalogo, menù, brochure, dépliant, volantino, flyer, poster, manifesto, banner, calendario, biglietti da visita, carta intestata, company profile, fotoritocco, vettoriale, curriculum, logo, correzione bozze, refusi, bello, semplice, efficace, corretto, saul bass, jeff bezos';
+        $desc = 'Silvia Galasso | grafica editoriale: si occupa principalmente di impaginare libri, ma anche di grafica pubblicitaria e correzione bozze. realizza libri, riviste, manù, materiale pubblicitario, loghi, immagine coordinata, fotoritocco.';
+        $header_url = 'banner_header_brand.jpg';
+        break;
+    case 'contatti':
+        $title = 'CONTATTI - Silvia Galasso | grafica editoriale';
+        $meta = 'contatti, e-mail, preventivo, gratuito, social, linkedin, facebook, behance, pinterest, instagram, academia.edu';
+        $desc = 'Silvia Galasso | grafica editoriale: puoi contattarla tramite e-mail, oppure trovarla su pinterest, instagram, facebook, behance, linkedin, academia.edu';
+        $header_url = 'banner_header_contact_me.jpg';
+        break;
+    case 'portfolio':
+        $title = 'PORTFOLIO - Silvia Galasso | grafica editoriale';
+        $meta = 'portfolio, grafica editoriale, graphic design, indesign, photoshop, impaginazione, layout, illustrator, fotoritocco, fotomontaggio, vettoriale';
+        $desc = 'Silvia Galasso | grafica editoriale: puoi verificare le sue competenze e abilità sfogliando il suo portfolio.';
+        break;
+    default:
+        $title = 'Silvia Galasso | grafica editoriale';
+        $meta = 'grafica editoriale, graphic design, impaginazione, libri, freelance';
+        $desc = 'Silvia Galasso | grafica editoriale: grafica freelance; si occupa principalmente di impaginare libri, ma anche di grafica pubblicitaria e correzione bozze. ama i libri e la carta stampata.';
+        $header_url = 'banner_header_homepage.jpg';
+}
+?><!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
@@ -6,11 +38,12 @@
   <meta name="googlebot" content="noindex">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="<?php echo $desc; ?>">
+  <meta name="keywords" content="<?php echo $meta; ?>">
   <meta name="author" content="">
   <link rel="icon" href="/img/favicon.png">
 
-  <title>Silvia Galasso - grafica editoriale</title>
+  <title><?php echo $title; ?></title>
 
   <script src="https://use.typekit.net/ucj3pba.js"></script>
   <script>try{Typekit.load({ async: false });}catch(e){}</script>
@@ -80,22 +113,6 @@
     </nav>
     <div class="container-white-bg line"></div>
       <?php
-        switch ($page) {
-            case 'chi':
-                $header_url = 'banner_header_typography.jpg';
-                $mobile_header_url = 'banner_header_typography_mobile.jpg';
-                break;
-            case 'cosa':
-                $header_url = 'banner_header_brand.jpg';
-                break;
-            case 'contatti':
-                $header_url = 'banner_header_contact_me.jpg';
-                break;
-            case 'portfolio':
-                break;
-            default:
-                $header_url = 'banner_header_homepage.jpg';
-        }
         if ($header_url){ ?>
           <div class="banner homepage__header_banner banner--header">
             <img src="/img/<?php echo $header_url ?>" class="img-fluid banner__image <?php if ($mobile_header_url){ echo 'hidden-sm-down'; } ?>" alt="Silvia Galasso Typography">

@@ -1,4 +1,36 @@
-<!DOCTYPE html>
+<?php
+switch ($page) {
+    case 'chi':
+        $title = 'ABOUT - Silvia Galasso | editorial design';
+        $meta = 'editorial design, graphic design, layout, indesign, photoshop, illustrator, freelance, typography, paper, advertising, communication, proofreading, typos, grammar rules, syntax, classicist, archaeology, culture, punctuality, precision, creativity, ellen lupton';
+        $desc = '';
+        $header_url = 'banner_header_typography.jpg';
+        $mobile_header_url = 'banner_header_typography_mobile.jpg';
+        break;
+    case 'cosa':
+        $title = 'WHAT I DO - Silvia Galasso | editorial design';
+        $meta = 'editorial design, graphic design, visual design, layout, indesign, photoshop, illustrator, freelance, typography, paper, advertising, communication, brand, corporate identity, books, magazines, catalogue, menu, brochure, dépliant, leaflet, flyer, poster, banner, calendar, business cards, letterhead, company profile, photo editing, image tracing, curriculum, logos, proofreading, typos, beautiful, simple, effective, accurate, saul bass, jeff bezos';
+        $desc = '';
+        $header_url = 'banner_header_brand.jpg';
+        break;
+    case 'contatti':
+        $title = 'CONTACT ME - Silvia Galasso | editorial design';
+        $meta = 'contacts, e-mail, free, estimate, social media, linkedin, facebook, behance, pinterest, instagram, academia.edu';
+        $desc = '';
+        $header_url = 'banner_header_contact_me.jpg';
+        break;
+    case 'portfolio':
+        $title = 'PORTFOLIO - Silvia Galasso | editorial design';
+        $meta = 'portfolio, editorial design, graphic design, indesign, photoshop, layout, illustrator, photo editing';
+        $desc = '';
+        break;
+    default:
+        $title = 'Silvia Galasso | editorial design';
+        $meta = 'editorial design, graphic design, layout, books, freelance';
+        $desc = '';
+        $header_url = 'banner_header_homepage.jpg';
+}
+?><!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
@@ -6,11 +38,12 @@
   <meta name="googlebot" content="noindex">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="<?php echo $desc; ?>">
+  <meta name="keywords" content="<?php echo $meta; ?>">
   <meta name="author" content="">
   <link rel="icon" href="/img/favicon.png">
 
-  <title>Silvia Galasso - editorial design</title>
+  <title><?php echo $title; ?></title>
 
   <script src="https://use.typekit.net/ucj3pba.js"></script>
   <script>try{Typekit.load({ async: false });}catch(e){}</script>
@@ -80,22 +113,6 @@
     </nav>
     <div class="container-white-bg line"></div>
       <?php
-        switch ($page) {
-            case 'chi':
-                $header_url = 'banner_header_typography.jpg';
-                $mobile_header_url = 'banner_header_typography_mobile.jpg';
-                break;
-            case 'cosa':
-                $header_url = 'banner_header_brand.jpg';
-                break;
-            case 'contatti':
-                $header_url = 'banner_header_contact_me.jpg';
-                break;
-            case 'portfolio':
-                break;
-            default:
-                $header_url = 'banner_header_homepage.jpg';
-        }
         if ($header_url){ ?>
           <div class="banner homepage__header_banner banner--header">
             <img src="/img/<?php echo $header_url ?>" class="img-fluid banner__image <?php if ($mobile_header_url){ echo 'hidden-sm-down'; } ?>" alt="Silvia Galasso Typography">
