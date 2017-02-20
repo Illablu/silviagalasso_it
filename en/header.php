@@ -37,8 +37,8 @@
         <div class="col-xs-10">
           <div class="brand">
             <a class="navbar-brand brand__title" href="/en">Silvia Galasso</a>
-            <span class="brand__sidetitle clearfix hidden-md-down">editorial design</span>
-            <span class="brand__subtitle clearfix hidden-lg-up">editorial design</span>
+            <a href="/"><span class="brand__sidetitle clearfix hidden-md-down">editorial design</span></a>
+            <a href="/"><span class="brand__subtitle clearfix hidden-lg-up">editorial design</span></a>
           </div>
         </div>
         <div class="col-xs-2 text-xs-right">
