@@ -18,7 +18,7 @@ include('header.php');
             <li class="list-item-inline">cataloghi </li>
             <li class="list-item-inline">men&ugrave;</li>
             <li class="list-item-inline">brochure </li>
-            <li class="list-item-inline">de&grave;pliant </li>
+            <li class="list-item-inline">d&eacute;pliant </li>
             <li class="list-item-inline">volantini </li>
             <li class="list-item-inline">locandine</li>
           </ul>

@@ -48,7 +48,7 @@
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="nav-item <?php if ($page == 'index'){ echo 'active'; } ?>">
-                <a class="nav-link" href="chi">Homepage</a>
+                <a class="nav-link" href="/">Homepage</a>
               </li>
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
                 <a class="nav-link" href="chi">Chi</a>

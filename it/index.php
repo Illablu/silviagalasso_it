@@ -6,9 +6,8 @@ include('header.php');
   <div class="col-xs-12">
     <h3>Ciao!</h3>
     <p>
-      Sono una grafica freelance con la passione della carta e dei <a href="#" data-toggle="modal" data-target="#libri">libri</a>, e un’innata propensione alla cura dei dettagli...<br />
-      Scopri di pi&ugrave; su <a href="chi">chi</a> sono, <a href="cosa">cosa</a> faccio e come <a href="contatti">contattarmi</a>.<br />
-      E, se ne hai voglia, dai un'occhiata al mio <a href="portfolio">portfolio</a>!
+      Sono una grafica freelance con la passione della carta e dei <a href="#" data-toggle="modal" data-target="#libri">libri</a> e un’innata propensione alla cura dei dettagli...<br />
+      Scopri di pi&ugrave; su <a href="chi">chi</a> sono, <a href="cosa">cosa</a> faccio, come <a href="contatti">contattarmi</a> e, se ne hai voglia, dai un'occhiata al mio <a href="portfolio">portfolio</a>!
     </p>
     <p>&nbsp;</p>
   </div>
