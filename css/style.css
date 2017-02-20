@@ -277,6 +277,7 @@ body.page-portfolio .container-bg-line-container{
 
 .navbar-collapse .nav-item{
   background-color: #FFFFFF;
+  white-space: nowrap !important;
 }
 .navbar-collapse .navbar-nav{
   padding-top: 1.25rem;
