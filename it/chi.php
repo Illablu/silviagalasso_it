@@ -4,7 +4,7 @@ include('header.php');
 ?>
 <div class="row">
   <div class="col-xs-12">
-    <h3>Chi</h3>
+    <h3>Chi sono</h3>
     <p>
       Sono una grafica freelance con base a Pordenone (Italia).<br />
       Mi occupo principalmente di grafica editoriale, cio&egrave; impaginazione di testi destinati alla stampa: tesi, tesine, libri, riviste, brochure, dépliant, volantini, biglietti da visita, carta intestata... eccetera.<br />
