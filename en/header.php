@@ -66,9 +66,11 @@
                 <a class="nav-link" href="/files/sg_tariffario_2017.pdf" target="_blank"><svg><use xlink:href="/img/social-icons.svg#download"></use></svg>Price list</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link section_link language__selector" href="/it">
-                  <img class="language__selector__flag" src="/img/flag_italy.png" alt="">
-                  <span>Versione italiana</span>
+                <a class="nav-link section_link language__selector" href="/en">
+                  <svg x="0px" y="0px">
+                    <clipPath id="clip-it"><circle id="XMLID_133_" cx="52.5" cy="52.5" r="50"/></clipPath>
+                    <use xlink:href="/img/flags.svg#it"></use></svg>
+                  <span>Italian version</span>
                 </a>
               </li>
             </ul>

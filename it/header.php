@@ -67,7 +67,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link section_link language__selector" href="/en">
-                  <img class="language__selector__flag" src="/img/flag_uk.png" alt="">
+                  <svg x="0px" y="0px">
+                    <clipPath id="clip-uk"><circle id="XMLID_131_" cx="52.5" cy="52.5" r="50"/></clipPath>
+                    <use xlink:href="/img/flags.svg#uk"></use></svg>
                   <span>English version</span>
                 </a>
               </li>

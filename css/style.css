@@ -322,6 +322,10 @@ body.page-portfolio .container-bg-line-container{
   height: 2rem;
   vertical-align: middle;
 }
+.navbar-collapse .nav-item .nav-link.language__selector svg{
+  width: 1.3rem;
+  height: 1.3rem;
+}
 
 .navbar-collapse .nav-item{
   float: none;
