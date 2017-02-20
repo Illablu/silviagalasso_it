@@ -67,15 +67,15 @@
           <form class="form">
             <fieldset>
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">e-mail</label>
                 <input name="email" id="email" placeholder="" required class="form-control" type="email">
               </div>
               <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">name</label>
                 <input id="name" name="name" placeholder="" required class="form-control" type="text">
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
+                <label for="message">message</label>
                 <textarea placeholder="" class="form-control" required name="message" id="message"></textarea>
               </div>
               <div class="form-group">
@@ -85,7 +85,7 @@
               </div>
               <div class="form-group form-submit">
                 <label class="control-label">&nbsp;</label>
-                <input type="submit" class="btn btn-default" />
+                <input type="submit" value="Submit" class="btn btn-default" />
               </div>
             </fieldset>
             <div class="feedback"></div>

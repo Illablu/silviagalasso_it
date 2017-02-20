@@ -69,15 +69,15 @@
           <form class="form">
             <fieldset>
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">e-mail</label>
                 <input name="email" id="email" placeholder="" required class="form-control" type="email">
               </div>
               <div class="form-group">
-                <label for="name">Nome</label>
+                <label for="name">nome</label>
                 <input id="name" name="name" placeholder="" required class="form-control" type="text">
               </div>
               <div class="form-group">
-                <label for="message">Messaggio</label>
+                <label for="message">messaggio</label>
                 <textarea placeholder="" class="form-control" required name="message" id="message"></textarea>
               </div>
               <div class="form-group">
@@ -142,7 +142,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   <script src='/js/jquery-validate.min.js'></script>
   <script src='/js/jquery-validate.messages_it.js'></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js?hl=it'></script>
   <script src="/js/menu.js" type="text/javascript"></script>
   <script src="/js/svg4everybody.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
