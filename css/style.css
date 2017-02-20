@@ -13,7 +13,8 @@ strong{
   font-family: 'Avenir LT Std 95 Black';
 }
 span.highlight{
-  color: #E50C7E;
+  font-weight: bold;
+  font-family: 'Avenir LT Std 95 Black';
 }
 span.highlight.strong{
   font-weight: bold;
@@ -38,6 +39,11 @@ p.no_breakline{
 .modal-header{
   border-bottom: 0;
   padding-bottom:0;
+}
+.modal-header h4{
+  font-weight: bold;
+  font-family: 'Avenir LT Std 95 Black';
+  text-transform: lowercase;
 }
 .modal ul{
   list-style-type: none;
@@ -147,10 +153,6 @@ p.no_breakline{
   font-family: Bebas-neue; 
   text-transform: uppercase;
   font-size: 1.25rem;
-  text-decoration: underline;
-}
-.content a{
-  text-decoration: underline; 
 }
 ul.list-inline.sidebar_list__arrow_bullet{
   margin-top:1em;
@@ -162,6 +164,9 @@ ul.sidebar_list__arrow_bullet li:before{
 }
 .modal-body ul li{
   margin-bottom:0.7em;
+}
+.modal-body ul.books li{
+  margin-bottom:0em;
 }
 .form-group.form-submit{
   text-align: right;
@@ -196,6 +201,11 @@ body.page-portfolio .container-bg-line-container{
   display: none;
 }
 /* Social links */
+.social_links{
+  max-width: 11.5em;
+  margin: auto;
+}
+
 .social_links .social_link svg
 {
   display: inline-block;
@@ -365,6 +375,9 @@ body {
 @media (min-width: 540px){
   .footer .footer__container--copyright .footer__content .text{
     font-size: 90%;
+  }
+  .social_links{
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 992px){

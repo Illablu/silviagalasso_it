@@ -104,7 +104,7 @@
           <p>I love paper and <span class="highlight">books</span>; here are some of my <span class="highlight">favourite ones</span>! (listed randomly)</p>
         </div>
         <div class="modal-body">
-          <ul>
+          <ul class="books">
             <li>Monocle Book Collection <span class="publisher">—Gestalten</span></li>
             <li>A Map of the World <span class="publisher">—Gestalten</span></li>
             <li>The Kinfolk Table <span class="publisher">—Ouur</span></li>

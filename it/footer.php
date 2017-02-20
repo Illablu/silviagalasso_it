@@ -106,7 +106,7 @@
           <p>amo la carta e amo i <span class="highlight">libri</span>, alcuni pi&ugrave; di altri... ve ne elenco qualcuno tra i miei <span class="highlight">preferiti</span>! (rigorosamente in ordine sparso)</p>
         </div>
         <div class="modal-body">
-          <ul>
+          <ul class="books">
             <li>Monocle Book Collection <span class="publisher">—Gestalten</span></li>
             <li>A Map of the World <span class="publisher">—Gestalten</span></li>
             <li>The Kinfolk Table <span class="publisher">—Ouur</span></li>
