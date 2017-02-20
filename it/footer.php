@@ -156,10 +156,13 @@
         singleItem: true,
         autoHeight : true,
         autoPlay: true,
-        transitionStyle : "fade"
+        transitionStyle : "fade",
       });
 
-      $(document).swipebox({ selector: '.swipebox' });
+      $(document).swipebox({ 
+        selector: '.swipebox',
+        hideBarsDelay: 20000
+      });
 
       $('.form').validate({
         lang: 'it',

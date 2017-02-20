@@ -152,10 +152,14 @@
       $('.portfolio').owlCarousel({
         singleItem: true,
         autoHeight : true,
-        transitionStyle : "fade"
+        autoPlay: true,
+        transitionStyle : "fade",
       });
 
-      $(document).swipebox({ selector: '.swipebox' });
+      $(document).swipebox({ 
+        selector: '.swipebox',
+        hideBarsDelay: 20000
+      });
 
       $('.form').validate({
         lang: 'en',
