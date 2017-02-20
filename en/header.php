@@ -3,31 +3,31 @@ switch ($page) {
     case 'chi':
         $title = 'ABOUT - Silvia Galasso | editorial design';
         $meta = 'editorial design, graphic design, layout, indesign, photoshop, illustrator, freelance, typography, paper, advertising, communication, proofreading, typos, grammar rules, syntax, classicist, archaeology, culture, punctuality, precision, creativity, ellen lupton';
-        $desc = '';
+        $desc = 'Silvia Galasso | editorial design: freelance graphic designer; she\'s a classicist; she deals mainly with editorial design but she\'s also experienced in graphic design and proofreading. Skills: editorial design, graphic design, indesign, illustrator, photoshop.';
         $header_url = 'banner_header_typography.jpg';
         $mobile_header_url = 'banner_header_typography_mobile.jpg';
         break;
     case 'cosa':
         $title = 'WHAT I DO - Silvia Galasso | editorial design';
         $meta = 'editorial design, graphic design, visual design, layout, indesign, photoshop, illustrator, freelance, typography, paper, advertising, communication, brand, corporate identity, books, magazines, catalogue, menu, brochure, dépliant, leaflet, flyer, poster, banner, calendar, business cards, letterhead, company profile, photo editing, image tracing, curriculum, logos, proofreading, typos, beautiful, simple, effective, accurate, saul bass, jeff bezos';
-        $desc = '';
+        $desc = 'Silvia Galasso | editorial design: she deals mainly with editorial and graphic design and proofreading. She layouts texts for printing: books, magazines, menu, advertising graphics, logo design, photo editing.';
         $header_url = 'banner_header_brand.jpg';
         break;
     case 'contatti':
         $title = 'CONTACT ME - Silvia Galasso | editorial design';
         $meta = 'contacts, e-mail, free, estimate, social media, linkedin, facebook, behance, pinterest, instagram, academia.edu';
-        $desc = '';
+        $desc = 'Silvia Galasso | editorial design: you can contact her by e-mail, or find her on pinterest, instagram, facebook, behance, linkedin, academia.edu';
         $header_url = 'banner_header_contact_me.jpg';
         break;
     case 'portfolio':
         $title = 'PORTFOLIO - Silvia Galasso | editorial design';
         $meta = 'portfolio, editorial design, graphic design, indesign, photoshop, layout, illustrator, photo editing';
-        $desc = '';
+        $desc = 'Silvia Galasso | editorial design: you can check her skills browsing her portfolio.';
         break;
     default:
         $title = 'Silvia Galasso | editorial design';
         $meta = 'editorial design, graphic design, layout, books, freelance';
-        $desc = '';
+        $desc = 'Silvia Galasso | editorial design: freelance graphic designer; she deals mainly with editorial design but she\'s also experienced in editing and processing vector images and proofreading. She loves books and all printed media.';
         $header_url = 'banner_header_homepage.jpg';
 }
 ?><!DOCTYPE html>

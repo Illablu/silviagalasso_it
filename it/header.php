@@ -10,7 +10,7 @@ switch ($page) {
     case 'cosa':
         $title = 'COSA - Silvia Galasso | grafica editoriale';
         $meta = 'grafica editoriale, graphic design, grafica pubblicitaria, impaginazione, layout, indesign, photoshop, illustrator, freelance, tipografia, carta stampata, pubblicità, comunicazione, brand, immagine coordinata, libro, rivista, catalogo, menù, brochure, dépliant, volantino, flyer, poster, manifesto, banner, calendario, biglietti da visita, carta intestata, company profile, fotoritocco, vettoriale, curriculum, logo, correzione bozze, refusi, bello, semplice, efficace, corretto, saul bass, jeff bezos';
-        $desc = 'Silvia Galasso | grafica editoriale: si occupa principalmente di impaginare libri, ma anche di grafica pubblicitaria e correzione bozze. realizza libri, riviste, manù, materiale pubblicitario, loghi, immagine coordinata, fotoritocco.';
+        $desc = 'Silvia Galasso | grafica editoriale: si occupa principalmente di impaginare libri, ma anche di grafica pubblicitaria e correzione bozze. realizza libri, riviste, menù, materiale pubblicitario, loghi, immagine coordinata, fotoritocco.';
         $header_url = 'banner_header_brand.jpg';
         break;
     case 'contatti':
@@ -84,10 +84,10 @@ switch ($page) {
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
-                <a class="nav-link" href="chi">Chi</a>
+                <a class="nav-link" href="chi">Chi sono</a>
               </li>
               <li class="nav-item <?php if ($page == 'cosa'){ echo 'active'; } ?>">
-                <a class="nav-link" href="cosa">Cosa</a>
+                <a class="nav-link" href="cosa">Cosa faccio</a>
               </li>
               <li class="nav-item <?php if ($page == 'contatti'){ echo 'active'; } ?>">
                 <a class="nav-link" href="contatti">Contatti</a>

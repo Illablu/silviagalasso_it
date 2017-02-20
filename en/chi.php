@@ -4,7 +4,7 @@ include('header.php');
 ?>
 <div class="row">
   <div class="col-xs-12">
-    <h3>Who</h3>
+    <h3>About</h3>
     <p>
       I’m a freelance editorial designer, based in Pordenone (Italy).<br />
       I deal mainly with editorial design, that is overseeing the layout of texts for printing: theses, papers, books, brochures, leaflets, flyers, business cards...<br />
