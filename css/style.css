@@ -67,6 +67,7 @@ p.no_breakline{
   text-align: center;
 }
 .footer .footer__content .text{
+  line-height: 20px;
   color: #FFFFFF;
   font-family: "Avenir LT Std 35 Light";
 }
@@ -496,4 +497,10 @@ body {
 /* Patch for slideshow close button interacting with menu */
 #swipebox-close{
   left:0;
+}
+
+.sf-logo img{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }

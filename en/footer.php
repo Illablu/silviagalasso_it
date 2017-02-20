@@ -8,10 +8,15 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 footer__content hidden-xs-down">
-            <span class="text">copyright 2017 © silviagalasso.it | info@silviagalasso.it | p.iva 01785320936 | ©</span>
+            <span class="text">copyright 2017 © silviagalasso.it | info@silviagalasso.it | p.iva 01785320936 | <a href="https://www.linkedin.com/in/stefanofranzin/" target="_blank" class="sf-logo">
+              <img src="/img/social-icons.svg.sf.png" />
+            </a></span>
           </div>
           <div class="col-xs-12 footer__content hidden-sm-up">
-            <span class="text">copyright 2017 © silviagalasso.it <br /> info@silviagalasso.it | p.iva 01785320936 | ©</span>
+            <span class="text">copyright 2017 © silviagalasso.it <br /> info@silviagalasso.it | p.iva 01785320936 | <a href="https://www.linkedin.com/in/stefanofranzin/" target="_blank" class="sf-logo">
+              <img src="/img/social-icons.svg.sf.png" />
+            </a>
+            </span>
           </div>
         </div>
       </div>
