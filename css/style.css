@@ -340,14 +340,27 @@ body.page-portfolio .container-bg-line-container{
 .portfolio .owl-item{
   padding-right: 10px;
 }
+.portfolio .item{
+  
+}
+.portfolio .item .description{
+  padding: 1em;
+  margin-top: 1em;
+  /*background-color: #000000;*/
+}
 .portfolio .item h5{
   margin-bottom:0;
   padding-bottom:0;
   font-size: 1.1em;
+  font-family: 'Avenir LT Std 65 Medium';
+  text-transform: lowercase;
+  text-align: left;
 }
 .portfolio .item p{
   padding-top:1pt;
+  margin-bottom: 0;
   font-size: 0.75em;
+  text-align: left;
 }
 .portfolio .item span.details{
   font-style: italic;
