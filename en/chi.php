@@ -12,7 +12,7 @@ include('header.php');
       I can therefore help you create a logo and process your <a href="#" data-toggle="modal" data-target="#immagine_coordinata">corporate identity</a>, or promote your company through the study and implementation of a <a href="#" data-toggle="modal" data-target="#company_profile" >company profile</a>.<br />
       My background? I am a classicist.<br />
       Beginning as a ‘classical philologist’, I continued as an ‘archaeologist’ and finally landed on ‘graphic design’.<br />
-      Hence the union of <strong>culture</strong>, <strong>precision</strong>, <strong>punctuality</strong>, <strong>order</strong>, <strong>rigor</strong> and <strong>creativity</strong>!<br />
+      Hence the union of <strong>culture</strong>, <strong>precision</strong>, <strong>punctuality</strong>, <strong>order</strong>, <strong>rigour</strong> and <strong>creativity</strong>!<br />
       What else? I'm pretty good at spotting typos and following Italian grammar rules and syntax!
     </p>
     <p>&nbsp;</p>

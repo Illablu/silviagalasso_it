@@ -32,8 +32,8 @@
         </div>
         <div class="modal-body">
           <ul>
-            <li>set of visual representations of an entity (company, corporation, organization, association, business) designed to make it well-known and instantly recognizable to certain audiences.</li>
-            <li>it includes different elements of visual communication (logos, colors, fonts, layout), coherently mixed together in order to provide precise reference points, making the company brand and its activities well known and recognizable, with positive effects on its success.</li>
+            <li>set of visual representations of an entity (company, corporation, organization, association, business) designed to make it well-known and instantly recognisable to certain audiences.</li>
+            <li>it includes different elements of visual communication (logos, colours, fonts, layout), coherently mixed together in order to provide precise reference points, making the company brand and its activities well known and recognisable, with positive effects on its success.</li>
           </ul>      
         </div>
       </div>
@@ -52,7 +52,7 @@
             <li>tool of visual communication to reflect and enhance the identity of a company.</li>
             <li>graphically it looks like a visually compelling, refined and elegant leaflet or brochure, whose purpose is to present in a professional manner your own company to the market and customers.</li>
             <li>it serves to express: who you are | in which business and context you operate | how you imagine your future | what are the values that underpin your company | what are your goals.</li>
-            <li>continuity and consistency of the contents are emphasized from the idea of a story, designed as a common thread to emotionally engage the reader.</li>
+            <li>continuity and consistency of the contents are emphasised from the idea of a story, designed as a common thread to emotionally engage the reader.</li>
             <li>graphic design is crucial to highlight the content and positively impress the reader, highlighting the concepts expressed, grabbing their attention and exerting a strong and effective communicative power.</li>
             <li>the goal is to grab the attention of the reader or potential customer, stimulate their curiosity, impresse them positively, win them over.</li>
           </ul>      

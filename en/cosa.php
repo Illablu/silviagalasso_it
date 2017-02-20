@@ -33,7 +33,7 @@ include('header.php');
             <li class="list-item-inline">company profile</li>
             <li class="list-item-inline">photo editing</li>
             <li class="list-item-inline">image tracing</li>
-            <li class="list-item-inline">customized resume layout</li>
+            <li class="list-item-inline">customised resume layout</li>
           </ul>        
         </div>
       </div>
