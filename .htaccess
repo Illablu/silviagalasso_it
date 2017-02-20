@@ -9,7 +9,7 @@ ReWriteRule ^it/cosa$ it/cosa.php [L]
 ReWriteRule ^it/contatti$ it/contatti.php [L] 
 ReWriteRule ^it/portfolio$ it/portfolio.php [L] 
 
-ReWriteRule ^en/who$ en/chi.php [L] 
+ReWriteRule ^en/about$ en/chi.php [L] 
 ReWriteRule ^en/what-i-do$ en/cosa.php [L] 
 ReWriteRule ^en/contact-me$ en/contatti.php [L] 
 ReWriteRule ^en/portfolio$ en/portfolio.php [L] 

@@ -81,7 +81,7 @@ switch ($page) {
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="nav-item <?php if ($page == 'index'){ echo 'active'; } ?>">
-                <a class="nav-link" href="/">Homepage</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item <?php if ($page == 'chi'){ echo 'active'; } ?>">
                 <a class="nav-link" href="chi">Chi</a>
@@ -103,7 +103,7 @@ switch ($page) {
                   <svg x="0px" y="0px">
                     <clipPath id="clip-uk"><circle id="XMLID_131_" cx="52.5" cy="52.5" r="50"/></clipPath>
                     <use xlink:href="/img/flags.svg#uk"></use></svg>
-                  <span>English version</span>
+                  <span>English</span>
                 </a>
               </li>
             </ul>

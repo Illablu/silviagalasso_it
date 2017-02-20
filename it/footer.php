@@ -122,10 +122,10 @@
             <li>How to <span class="publisher">—Thames & Hudson</span></li>
             <li>Logo Type <span class="publisher">—Laurence King</span></li>
             <li>Type matters! <span class="publisher">—Merrell</span></li>
-            <li>Grid Systems in Graphic Design -Niggli</span></li>
-            <li>Il nuovo manuale del grafico -Zanichelli</span></li>
+            <li>Grid Systems in Graphic Design <span class="publisher">—Niggli</span></li>
+            <li>Il nuovo manuale del grafico <span class="publisher">—Zanichelli</span></li>
             <li>The Design Book <span class="publisher">—Phaidon</span></li>
-            <li>la serie su Aristotele detective di Margareth Doody <span class="publisher">—Sellerio</span></li>
+            <li>la serie su Aristotele detective di Margaret Doody <span class="publisher">—Sellerio</span></li>
             <li>la serie su 007 di Ian Fleming <span class="publisher">—Adelphi</span></li>
             <li>La Storia del Mondo in 100 oggetti <span class="publisher">—Adelphi</span></li>
             <li>La Grande Storia <span class="publisher">—National Geographic</span></li>

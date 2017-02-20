@@ -41,8 +41,7 @@ p.no_breakline{
   padding-bottom:0;
 }
 .modal-header h4{
-  font-weight: bold;
-  font-family: 'Avenir LT Std 95 Black';
+  font-family: 'Avenir LT Std 65 Medium';
   text-transform: lowercase;
 }
 .modal ul{
@@ -135,7 +134,8 @@ p.no_breakline{
   border-left: 2px solid #FFFFFF;
   padding-left: 0.625em;
   margin-top: 0.35em;
-  line-height: 1.3em;
+  line-height: 1.2em;
+  padding-top: 0.1em;
   display: inline-block;
 }
 .navbar .navbar-toggler{
@@ -325,6 +325,7 @@ body.page-portfolio .container-bg-line-container{
 .navbar-collapse .nav-item .nav-link.language__selector svg{
   width: 1.3rem;
   height: 1.3rem;
+  margin-right: 0.25em;
 }
 
 .navbar-collapse .nav-item{

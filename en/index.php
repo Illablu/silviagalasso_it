@@ -7,7 +7,7 @@ include('header.php');
     <h3>Hello!</h3>
     <p>
       I’m a freelance editorial designer; I love <a href="#" data-toggle="modal" data-target="#libri">books</a> and paper and I have a natural vocation to details and quality...<br />
-      Find out <a href="who">who</a> I am, <a href="what-i-do">what</a>, how to <a href="contact-me">contact me</a> and, if you like it, take a look at my <a href="portfolio">portfolio</a>!
+      Find out <a href="about">who</a> I am, <a href="what-i-do">what</a> I do, how to <a href="contact-me">contact me</a> and, if you like it, take a look at my <a href="portfolio">portfolio</a>!
     </p>
     <p>&nbsp;</p>
   </div>
