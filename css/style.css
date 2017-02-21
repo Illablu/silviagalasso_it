@@ -500,7 +500,7 @@ body {
 }
 
 .sf-logo img{
-  width: 20px;
   height: 20px;
   vertical-align: middle;
+  margin-bottom: 3px;
 }
