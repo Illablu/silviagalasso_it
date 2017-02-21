@@ -39,8 +39,7 @@ include('header.php');
       </div>
     </div>
     <p>
-      Il principio che mi guida è:
-      “<strong>I follow the principle: "it has to be beautiful, clean, simple, effective, accurate and correct</strong>”. <br />
+      I follow the principle: “<strong>it has to be beautiful, clean, simple, effective, accurate and correct</strong>”. <br />
       I like to borrow the words of two prominent and well-known figures:<br />
       “If I cannot do great things, I can do small things <strong>in a great way</strong>” <span class="publisher">—Martin Luther King Jr</span><br />
       ”I want everything we do to be <strong>beautiful</strong> [...] <strong>I want to make beautiful things</strong>, even if nobody cares” <span class="publisher">—Saul Bass</span><br />
