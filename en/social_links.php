@@ -3,4 +3,4 @@
 <li class="list-inline-item social_link social_link__be"><a class="social_link__link" href="http://www.behance.net/silvia_galasso" target="_blank"><svg><use xlink:href="/img/social-icons.svg#behance"></use></svg></a></li>
 <li class="list-inline-item social_link social_link__pr"><a class="social_link__link" href="http://it.pinterest.com/silviagalasso/" target="_blank"><svg><use xlink:href="/img/social-icons.svg#pinterest"></use></svg></a></li>
 <li class="list-inline-item social_link social_link__i"><a class="social_link__link" href="http://www.instagram.com/sil.galasso/" target="_blank"><svg><use xlink:href="/img/social-icons.svg#instagram"></use></svg></a></li>
-<li class="list-inline-item social_link social_link__ac"><a class="social_link__link" href="/" target="_blank"><svg><use xlink:href="/img/social-icons.svg#academia"></use></svg></a></li>
+<li class="list-inline-item social_link social_link__ac"><a class="social_link__link" href="http://uniud.academia.edu/silviagalasso" target="_blank"><svg><use xlink:href="/img/social-icons.svg#academia"></use></svg></a></li>
