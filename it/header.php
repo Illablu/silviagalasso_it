@@ -58,7 +58,6 @@ switch ($page) {
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#E50C7E">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#E50C7E"> 
   
   <title><?php echo $title; ?></title>
 
