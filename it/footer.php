@@ -107,7 +107,7 @@
         <div class="modal-header">
           <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4>libri, che passione!</h4>
-          <p>amo la carta e amo i <span class="highlight">libri</span>, alcuni pi&ugrave; di altri... <br />ve ne elenco qualcuno tra i miei <span class="highlight">preferiti</span>!<br />(rigorosamente in ordine sparso)</p>
+          <p>amo la carta e amo i <span class="highlight">libri</span>, <br class="hidden-sm-up" />alcuni pi&ugrave; di altri... <br />ve ne elenco qualcuno <br class="hidden-sm-up" />tra i miei <span class="highlight">preferiti</span>!<br />(rigorosamente in ordine sparso)</p>
         </div>
         <div class="modal-body">
           <ul class="books">

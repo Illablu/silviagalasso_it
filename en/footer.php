@@ -106,7 +106,7 @@
         <div class="modal-header">
           <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4>books, my love!</h4>
-          <p>I love paper and <span class="highlight">books</span>; here are some of my <span class="highlight">favourite ones</span>! (listed randomly)</p>
+          <p>I love paper and <span class="highlight">books</span>; <br class="hidden-sm-up" />here are some of my <span class="highlight">favourite ones</span>! <br class="hidden-sm-down" />(listed randomly)</p>
         </div>
         <div class="modal-body">
           <ul class="books">
