@@ -193,13 +193,13 @@
                 $('.form')[0].reset();
                 grecaptcha.reset();
                 $('.form fieldset').delay(10000).fadeIn(300);
-                $('.form .feedback').html("<p class='submission-confirm success'>Grazie! Il tuo messaggio è stato inviato.</p>").fadeIn(300).delay(10000).fadeOut(300);
+                $('.form .feedback').html("<p class='submission-confirm success'>grazie, il tuo messaggio è stato inviato.</p>").fadeIn(300).delay(10000).fadeOut(300);
               });
               
             },
             error: function (request, status, error) {
               console.log(status);
-              $('.form .feedback').html("<p class='submission-confirm error'>Qualcosa è andato storto, riprova.</p>").fadeIn(300).delay(10000).fadeOut(300);
+              $('.form .feedback').html("<p class='submission-confirm error'>qualcosa è andato storto, riprova.</p>").fadeIn(300).delay(10000).fadeOut(300);
             }
           });
           return false;

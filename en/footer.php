@@ -191,13 +191,13 @@
                 $('.form')[0].reset();
                 grecaptcha.reset();
                 $('.form fieldset').delay(10000).fadeIn(300);
-                $('.form .feedback').html("<p class='submission-confirm success'>Thank you, your message has been sent.</p>").fadeIn(300).delay(10000).fadeOut(300);
+                $('.form .feedback').html("<p class='submission-confirm success'>thank you, your message has been sent.</p>").fadeIn(300).delay(10000).fadeOut(300);
               });
               
             },
             error: function (request, status, error) {
               console.log(status);
-              $('.form .feedback').html("<p class='submission-confirm error'>Something went wrong, please try again.</p>").fadeIn(300).delay(10000).fadeOut(300);
+              $('.form .feedback').html("<p class='submission-confirm error'>something went wrong, please try again.</p>").fadeIn(300).delay(10000).fadeOut(300);
             }
           });
           return false;
