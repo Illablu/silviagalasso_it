@@ -84,7 +84,7 @@ include('header.php');
         </div>
       </div>
       <div class="item">
-        <a href="/portfolio/portfolio-11.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-11-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
+        <a href="/portfolio/portfolio-07.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-07-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
           <h5>graphic design: <br class="hidden-sm-up" />
           advertising graphics <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> photo editing
@@ -93,7 +93,7 @@ include('header.php');
         </div>
       </div>
       <div class="item">
-        <a href="/portfolio/portfolio-07.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-07-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
+        <a href="/portfolio/portfolio-08.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-08-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
           <h5>graphic design: <br class="hidden-sm-up" />
           advertising graphics <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> photo editing and layout</h5>
@@ -101,21 +101,21 @@ include('header.php');
         </div>
       </div>
       <div class="item">
-        <a href="/portfolio/portfolio-08.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-08-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
-        <div class="description">
-          <h5>graphic design: <br class="hidden-sm-up" />vectors design</h5>
-          <p>original source is not proprietary content</p>
-        </div>
-      </div>
-      <div class="item">
         <a href="/portfolio/portfolio-09.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-09-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
-          <h5>graphic design: <br class="hidden-sm-up" />vectors design</h5>
+          <h5>graphic design: <br class="hidden-sm-up" />vector graphics</h5>
           <p>original source is not proprietary content</p>
         </div>
       </div>
       <div class="item">
         <a href="/portfolio/portfolio-10.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-10-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
+        <div class="description">
+          <h5>graphic design: <br class="hidden-sm-up" />vector graphics</h5>
+          <p>original source is not proprietary content</p>
+        </div>
+      </div>
+      <div class="item">
+        <a href="/portfolio/portfolio-11.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-11-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
           <h5>graphic design: <br class="hidden-sm-up" />
           image tracing</h5>

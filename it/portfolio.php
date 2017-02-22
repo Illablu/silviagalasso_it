@@ -70,54 +70,54 @@ include('header.php');
           esercizi di fotoritocco <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span>
           restauro fotografico digitale
           </h5>
-          <p>immagine presa da Internet a puro scopo esercitativo / copyright non verificato</p>
+          <p>immagine presa da internet a puro scopo esercitativo / copyright non verificato</p>
         </div>
       </div>
       <div class="item">
         <a href="/portfolio/portfolio-06.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-06-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
           <h5>graphic design: <br class="hidden-sm-up" />
-            prove di grafica pubblicitaria <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> fotoritocco
+            esercizi di grafica pubblicitaria <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> fotoritocco
           </h5>
-          <p>immagini prese da Internet a puro scopo esercitativo / copyright non verificato</p>
-        </div>
-      </div>
-      <div class="item">
-        <a href="/portfolio/portfolio-11.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-11-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
-        <div class="description">
-          <h5>graphic design: <br class="hidden-sm-up" />
-          prove di grafica pubblicitaria <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> fotoritocco</h5>
-          <p>immagine presa da Internet a puro scopo esercitativo / copyright non verificato</p>
+          <p>immagine prese da internet a puro scopo esercitativo / copyright non verificato</p>
         </div>
       </div>
       <div class="item">
         <a href="/portfolio/portfolio-07.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-07-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
           <h5>graphic design: <br class="hidden-sm-up" />
-          esercizi di grafica pubblicitaria <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> fotoritocco e impaginazione</h5>
-          <p>immagini prese da Internet a puro scopo esercitativo / copyright non verificato</p>
+          esercizi di grafica pubblicitaria <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> fotoritocco</h5>
+          <p>immagine presa da internet a puro scopo esercitativo / copyright non verificato</p>
         </div>
       </div>
       <div class="item">
         <a href="/portfolio/portfolio-08.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-08-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
-          <h5>graphic design: <br class="hidden-sm-up" />riproduzione grafica di oggetti tridimensionali</h5>
-          <p>immagine presa da Internet a puro scopo esercitativo / copyright non verificato</p>
+          <h5>graphic design: <br class="hidden-sm-up" />
+          esercizi di grafica pubblicitaria <br class="hidden-sm-up" /><span class="hidden-xs-down">|</span> fotoritocco e impaginazione</h5>
+          <p>immagini prese da internet a puro scopo esercitativo / copyright non verificato</p>
         </div>
       </div>
       <div class="item">
         <a href="/portfolio/portfolio-09.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-09-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
-          <h5>graphic design: <br class="hidden-sm-up" /> riproduzione grafica di oggetti tridimensionali</h5>
-          <p>immagine presa da Internet a puro scopo esercitativo / copyright non verificato</p>
+          <h5>graphic design: <br class="hidden-sm-up" />riproduzione grafica di oggetti tridimensionali</h5>
+          <p>immagine presa da internet a puro scopo esercitativo / copyright non verificato</p>
         </div>
       </div>
       <div class="item">
         <a href="/portfolio/portfolio-10.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-10-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
         <div class="description">
+          <h5>graphic design: <br class="hidden-sm-up" /> riproduzione grafica di oggetti tridimensionali</h5>
+          <p>immagine presa da internet a puro scopo esercitativo / copyright non verificato</p>
+        </div>
+      </div>
+      <div class="item">
+        <a href="/portfolio/portfolio-11.jpg" class="swipebox" rel="portfolio" ><img src="/portfolio/portfolio-11-th.jpg"  alt="Silvia Galasso | Portfolio | graphic design" /></a>
+        <div class="description">
           <h5>graphic design: <br class="hidden-sm-up" />
           esercizi di grafica vettoriale</h5>
-          <p>immagine presa da Internet a puro scopo esercitativo / copyright non verificato</p>
+          <p>immagine presa da internet a puro scopo esercitativo / copyright non verificato</p>
         </div>
       </div>
     </div>
