@@ -21,12 +21,13 @@ include('header.php');
             <li class="list-item-inline">leaflets</li>
             <li class="list-item-inline">flyers</li>
             <li class="list-item-inline">posters</li>
+            <li class="list-item-inline">banners</li>
           </ul>
         </div>
         <div class="col-xs-8">
           <ul class="list-inline sidebar_list__arrow_bullet">
-            <li class="list-item-inline">banners</li>
             <li class="list-item-inline">calendars</li>
+            <li class="list-item-inline">wedding invitations</li>
             <li class="list-item-inline">business cards</li>
             <li class="list-item-inline">letterhead</li>
             <li class="list-item-inline">corporate identity</li>

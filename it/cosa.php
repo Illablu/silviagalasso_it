@@ -21,12 +21,13 @@ include('header.php');
             <li class="list-item-inline">d&eacute;pliant </li>
             <li class="list-item-inline">volantini </li>
             <li class="list-item-inline">locandine</li>
+            <li class="list-item-inline">manifesti</li>
           </ul>
         </div>
         <div class="col-xs-8">
           <ul class="list-inline sidebar_list__arrow_bullet">
-            <li class="list-item-inline">manifesti</li>
             <li class="list-item-inline">calendari</li>
+            <li class="list-item-inline">inviti e partecipazioni</li>
             <li class="list-item-inline">biglietti da visita</li>
             <li class="list-item-inline">carta intestata</li>
             <li class="list-item-inline">immagine coordinata</li>
